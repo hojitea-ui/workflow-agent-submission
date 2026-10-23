@@ -6,17 +6,17 @@
 - Windows, Python 3.11 이상, 로그인된 Claude CLI(`claude`). 터미널에서 `claude`를 한 번 실행해 로그인해 두세요. 앱은 로그인 정보를 다루지 않습니다.
 
 ## 처음 한 번만
-PowerShell에서 이 폴더(`report-review-kit`)로 이동해 실행합니다(아래 `cd`는 압축을 푼 위치에서 시작한다고 봅니다).
+PowerShell에서 이 폴더(`2_report-review`)로 이동해 실행합니다(아래 `cd`는 압축을 푼 위치에서 시작한다고 봅니다).
 
 ```powershell
-cd report-review-kit
+cd 2_report-review
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
 ## 켜기
 ```powershell
-cd report-review-kit
+cd 2_report-review
 $env:PYTHONUTF8 = "1"
 .\.venv\Scripts\python.exe run.py
 ```

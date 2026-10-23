@@ -9,7 +9,7 @@
 
 ## 완료 범위와 확장 범위
 - **카드뉴스(완료 범위)**: 실제 실행 확인 결과는 `1_cardnews/ACCEPTANCE.md`(통과 10 · 일부 통과 2 · 실패 1 · 미확인 2)에 있습니다. 결과 PNG·ZIP은 `1_cardnews/results/` 두 폴더(`claude-duet_story`, `deepinfer_list`)입니다.
-- **확장(검수 에이전트)**: 가장 작은 범위로 만들었고, 정상 입력 한 번과 자료 부족 입력 한 번을 실제 Claude로 돌렸습니다. 결과 파일과 화면은 `2_report-review/evidence/`, 기록은 `2_report-review/VALIDATION.md`입니다. 확장 앱은 카드뉴스 앱을 복사해 뼈대(서버·DB·Claude CLI 연결·진행 상태)를 재사용하고 카드·이미지 부분을 뺐습니다.
+- **확장(검수 에이전트)**: 처음에는 가장 작은 범위로 설계했고, 정상 입력 한 번과 자료 부족 입력 한 번을 실제 Claude로 돌렸습니다. 결과 파일과 화면은 `2_report-review/evidence/`, 기록은 `2_report-review/VALIDATION.md`입니다. 확장 앱은 처음 설계(가장 작은 범위: 한 번의 검수·수정)에서 사용 중 막혀 최대 3라운드, 새 문제 이어 고치기, 보류 항목 자료 붙여넣기가 추가됐습니다(이유는 `2_report-review/PRD.md`의 "이번 범위"와 `VALIDATION.md`). 카드뉴스 앱을 복사해 뼈대(서버·DB·Claude CLI 연결·진행 상태)를 재사용하고 카드·이미지 부분을 뺐습니다.
 
 ## 제출에서 뺀 것
 앱이 결과를 저장하는 `data/`(내 PC 경로와 실행 기록), 가상환경 `.venv/`, 캐시는 포함하지 않았습니다. 카드뉴스 결과는 `data/`에서 내보낸 PNG·ZIP만 `results/`에 복사했습니다.
