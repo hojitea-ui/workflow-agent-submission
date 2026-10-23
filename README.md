@@ -13,3 +13,10 @@
 
 ## 제출에서 뺀 것
 앱이 결과를 저장하는 `data/`(내 PC 경로와 실행 기록), 가상환경 `.venv/`, 캐시는 포함하지 않았습니다. 카드뉴스 결과는 `data/`에서 내보낸 PNG·ZIP만 `results/`에 복사했습니다.
+
+## 읽는 순서 (10분)
+1. 이 파일 → 완료 범위와 확장 범위를 먼저 봅니다.
+2. `1_cardnews/ACCEPTANCE.md` (카드뉴스 15항목 판정) → `1_cardnews/results/` (결과 PNG·ZIP)
+3. `2_report-review/README.md`와 `VALIDATION.md` (확장 앱과 두 번 실행한 기록)
+4. 더 보고 싶다면 각 폴더의 `PRD.md`, `DECISIONS.md`. `API_SPEC.md`는 찾아보는 참조 문서라 처음부터 읽을 필요가 없습니다. 증거 화면은 `evidence/` 폴더에 있습니다.
+
