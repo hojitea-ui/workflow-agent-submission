@@ -59,19 +59,7 @@ AI는 조사 결과로 독자, 독자에게 유용한 이유, 카드 형식, 후
 CLI 방식은 `need_input`을 반환하고 현재 호출을 끝낸 뒤, 웹 답변을 같은 엔진 세션에 다음 요청으로 전달해 이어갈 수 있다. SDK의 대기 콜백은 웹 요청과 분리한 작업에서 관리한다. 서버 재시작 시 중단 상태를 인식하고 저장한 세션과 작업 기록을 이용해 복구하거나 명확한 재시도 선택을 보여 준다. 엔진이 바뀌면 세션 ID를 재사용하지 않고 저장된 프로젝트 요약으로 새 세션을 연다. 서로 다른 프로젝트에 '가장 최근 세션 이어가기'를 사용하지 않는다.
 
 ## 웹 API 계약 초안
-아래는 필수 의미를 담은 초안이다. 구현 언어에 맞춰 상세 타입과 오류 응답을 API_SPEC.md에 확정한다.
-
-| 요청 | 입력 | 결과 |
-|---|---|---|
-| POST /api/projects | topic, optional period | projectId |
-| POST /api/projects/{id}/research | requestId | runId, status |
-| GET /api/projects/{id} | 없음 | 후보·선택·상태·질문·산출물 |
-| POST /api/projects/{id}/selection | candidateIds, version | 저장된 선택 |
-| POST /api/projects/{id}/answers | questionId, version, answer, requestId | 수락 여부·현재 상태 |
-| POST /api/projects/{id}/approve | stage(storyboard/final), version, requestId | 제작 작업 ID 또는 최종 승인 상태 |
-| POST /api/projects/{id}/revisions | cardIds, instruction, version, requestId | 수정 작업 ID |
-| POST /api/runs/{id}/cancel | 없음 | 취소 상태 |
-| GET /api/projects/{id}/exports | 없음 | 검증된 다운로드 목록 |
+엔드포인트 표는 `API_SPEC.md` 3장이 현재 기준이다(처음 초안은 `history/PRD_웹API-초안.md`). 아래는 표에 담기지 않는 필수 의미다.
 
 변경을 일으키는 요청은 프로젝트 범위에서 requestId로 중복을 식별한다. 같은 ID·같은 입력은 저장한 결과를 반환하고 같은 ID·다른 입력은 충돌로 거절한다. 진행 작업 중 같은 요청을 반복해도 중복 제작하지 않는다. 최종 승인은 현재 결과 버전을 대상으로 저장하고, 수정 시 승인을 해제한다. exports는 최종 승인된 버전만 제공한다. 인증 필요·검색 실패·이미지 실패·잘못된 답변·취소를 구분한다. 오류 화면은 이유와 가능한 다음 행동을 제시한다. 취소는 실행 중인 하위 프로세스까지 정리한다.
 
