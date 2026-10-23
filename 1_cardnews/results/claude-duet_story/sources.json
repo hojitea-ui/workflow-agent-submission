@@ -1,0 +1,192 @@
+{
+ "topic": "AI 최신소식",
+ "researchBasis": "2026-10-23T20:28:37+09:00",
+ "windowDays": 7,
+ "windowFrom": "2026-10-16",
+ "windowTo": "2026-10-23",
+ "selectedNews": [
+  {
+   "title": "Anthropic, 선제형 에이전트 'Claude Duet' 리서치 프리뷰",
+   "publishedAt": "2026-10-22",
+   "dateStatus": "confirmed",
+   "sources": [
+    {
+     "title": "AI News for October 22, 2026",
+     "url": "https://aiweekly.co/ai-news-today/edition/2026-10-22",
+     "publisher": "AI Weekly"
+    },
+    {
+     "title": "Claude Duet Is Anthropic's Answer to Muse, Grok Bot and OpenAI Dots",
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "publisher": "iPhone in Canada"
+    },
+    {
+     "title": "Anthropic's Claude Duet uses Claude Code Routines for scheduled check-ins",
+     "url": "https://runtimewire.com/article/anthropic-s-claude-duet-uses-claude-code-routines-for-scheduled-check-ins",
+     "publisher": "RuntimeWire"
+    }
+   ],
+   "candidateStageNote": "대기자 명단 방식의 프리뷰로 전면 출시가 아니다. 출시일이 매체마다 21일과 22일로 엇갈린다. Opus 5.5 기반이라는 점도 Anthropic 공식 확인 없이 2차 매체 보도에 의존한다. 별도 가격은 공개되지 않았다."
+  }
+ ],
+ "readOriginals": [
+  "https://aiweekly.co/ai-news-today/edition/2026-10-22",
+  "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app"
+ ],
+ "facts": [
+  {
+   "text": "Anthropic이 Claude Duet을 리서치 프리뷰로 공개했고, 접근은 미국 Pro·Max 구독자 대기자 명단 방식이다. 전면 출시가 아니다.",
+   "sourceUrl": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+   "status": "confirmed"
+  },
+  {
+   "text": "연결된 앱을 확인해 아침 브리핑을 주고, 도움이 필요할 때만 알린다. 메시지 발송·결제·문서 서명·삭제 같은 행동은 먼저 사용자 승인을 받는다.",
+   "sourceUrl": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+   "status": "confirmed"
+  },
+  {
+   "text": "iPhone, Android, 웹에서 동작한다. 자체 가상 머신(브라우저 포함)에서 실행되어 사용자 기기를 켜 둘 필요가 없다.",
+   "sourceUrl": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+   "status": "company_claim"
+  },
+  {
+   "text": "Claude Opus 5.5를 기반으로 만들었다는 설명이 있다. 다만 Anthropic 공식 페이지는 직접 열어 확인하지 못했고, 2차 매체가 전한 내용이다.",
+   "sourceUrl": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+   "status": "company_claim"
+  },
+  {
+   "text": "Claude Code Routines로 연결 계정을 약 3시간마다 점검한다. 다른 매체는 '몇 시간마다'라고만 쓴다.",
+   "sourceUrl": "https://runtimewire.com/article/anthropic-s-claude-duet-uses-claude-code-routines-for-scheduled-check-ins",
+   "status": "company_claim"
+  },
+  {
+   "text": "백그라운드 점검은 구독 플랜의 사용 한도에 포함된다. 프리뷰 기간에는 Pro·Max에 포함되며 별도 가격은 확인되지 않았다.",
+   "sourceUrl": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+   "status": "company_claim"
+  },
+  {
+   "text": "Anthropic은 Duet이 무엇이 급한지 잘못 판단할 수 있다고 인정했다. 1Password 로그인은 '곧 지원' 예정이다.",
+   "sourceUrl": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+   "status": "announced"
+  },
+  {
+   "text": "AI Weekly 2026-10-22판이 대기자 명단과 Opus 5.5 기반을 짧게 요약해 보도했다. 전문과 가입 방법은 없다.",
+   "sourceUrl": "https://aiweekly.co/ai-news-today/edition/2026-10-22",
+   "status": "confirmed"
+  },
+  {
+   "text": "Team·Enterprise 플랜은 초기 프리뷰에서 제외된다는 검색 결과 요약이 있다. 원문은 열어 보지 못했다.",
+   "sourceUrl": "https://cryptobriefing.com/?p=399613",
+   "status": "unverified"
+  }
+ ],
+ "limits": [
+  "Anthropic 공식 발표나 문서를 찾지 못했다. 모든 내용은 2차 매체 보도에 기반한다.",
+  "대기자 명단 프리뷰이고 미국 Pro·Max 한정이라 한국 독자는 바로 쓸 수 없다. 한국 제공 계획은 확인되지 않았다.",
+  "별도 가격은 공개되지 않았다.",
+  "실제 성능과 정확도는 독립 검증이 없다. Anthropic도 긴급도 오판 가능성을 인정했다.",
+  "Opus 5.5 기반, 6,000개 이상 커넥터, 보안 분류기 같은 세부 기능은 2차 매체 한 곳의 설명이라 카드에서 단정하지 않는다."
+ ],
+ "conflicts": [
+  "출시일: 대부분 매체는 10월 21일 공개로 쓰고, AI Weekly는 10월 22일자로 보도했다. 21일은 공개일, 22일은 보도일로 보인다.",
+  "점검 주기: RuntimeWire는 약 3시간마다, iPhone in Canada는 '몇 시간마다'라고 쓴다."
+ ],
+ "cards": [
+  {
+   "order": 1,
+   "cardId": "card_1",
+   "title": "AI가 먼저 말을 거는 시대",
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "Duet 리서치 프리뷰와 미국 Pro·Max 대기자 명단 방식 보도"
+    },
+    {
+     "url": "https://aiweekly.co/ai-news-today/edition/2026-10-22",
+     "note": "AI Weekly가 10월 22일판에서 대기자 명단을 요약 보도"
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 2,
+   "cardId": "card_2",
+   "title": "지금까지의 AI 비서",
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "Duet을 먼저 챙기는 선제형 에이전트로 소개한 보도"
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 3,
+   "cardId": "card_3",
+   "title": "놓치기 쉬운 일상",
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "연결된 앱을 확인하는 에이전트라는 설명"
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 4,
+   "cardId": "card_4",
+   "title": "먼저 챙겨 주는 비서",
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "아침 브리핑 제공, 필요할 때만 알림"
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 5,
+   "cardId": "card_5",
+   "title": "중요한 행동은 승인 먼저",
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "발송·결제·서명·삭제 전 사용자 승인 요청"
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 6,
+   "cardId": "card_6",
+   "title": "기대 전에 알아둘 한계",
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "미국 한정 대기자 명단, 오판 인정, 1Password 곧 지원, Opus 5.5는 2차 매체 설명"
+    },
+    {
+     "url": "https://aiweekly.co/ai-news-today/edition/2026-10-22",
+     "note": "짧은 요약뿐이며 가입 방법은 없음"
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 7,
+   "cardId": "card_7",
+   "title": "정리: 기대는 차분하게",
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "앞서 정리한 프리뷰·승인·한계 내용의 원문"
+    },
+    {
+     "url": "https://runtimewire.com/article/anthropic-s-claude-duet-uses-claude-code-routines-for-scheduled-check-ins",
+     "note": "점검 주기를 다룬 다른 매체 보도로 추가 확인용"
+    }
+   ],
+   "unsupportedNumbers": []
+  }
+ ]
+}

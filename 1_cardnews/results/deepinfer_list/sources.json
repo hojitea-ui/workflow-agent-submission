@@ -1,0 +1,163 @@
+{
+ "topic": "AI 최신소식",
+ "researchBasis": "2026-10-23T21:17:04+09:00",
+ "windowDays": 7,
+ "windowFrom": "2026-10-16",
+ "windowTo": "2026-10-23",
+ "selectedNews": [
+  {
+   "title": "DeepSeek, 추론 프레임워크 DeepInfer 오픈소스 공개",
+   "publishedAt": "2026-10-20",
+   "dateStatus": "confirmed",
+   "sources": [
+    {
+     "title": "DeepSeek open-sources DeepInfer, its V4.1-Flash serving stack",
+     "url": "https://aiweekly.co/alerts/deepseek-open-sources-deepinfer-its-v41-flash-serving-stack",
+     "publisher": "AI News Weekly"
+    },
+    {
+     "title": "AI News for October 20, 2026",
+     "url": "https://aiweekly.co/ai-news-today/edition/2026-10-20",
+     "publisher": "AI News Weekly"
+    }
+   ],
+   "candidateStageNote": "GitHub 원문을 직접 확인하지 못했다. 성능 수치는 확인되지 않았다."
+  }
+ ],
+ "readOriginals": [
+  "https://github.com/deepseek-ai/DeepInfer"
+ ],
+ "facts": [
+  {
+   "text": "DeepSeek이 2026-10-20 추론 프레임워크 DeepInfer를 Apache 2.0 라이선스로 GitHub(deepseek-ai/DeepInfer)에 공개했다.",
+   "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+   "status": "confirmed"
+  },
+  {
+   "text": "지원 모델은 DeepSeek-V4.1-Flash(기본 체크포인트 DeepSeek-V4.1-Flash-1017)이고, 지원 하드웨어는 NVIDIA SM100 GPU와 Huawei Ascend 950 NPU다.",
+   "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+   "status": "confirmed"
+  },
+  {
+   "text": "요구 환경: Linux, GCC 13 이상, Python 3.12, CUDA 13(NVIDIA) 또는 CANN 9.2(Ascend).",
+   "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+   "status": "confirmed"
+  },
+  {
+   "text": "이번 릴리스에는 KV 캐시 시스템, Prefill/Decode 분리, 복제본 간 로드 밸런싱이 포함되지 않았다. 배치 불변 추론과 결정론적 샘플링은 NVIDIA 전용이다.",
+   "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+   "status": "confirmed"
+  },
+  {
+   "text": "README의 성능 자료는 Prefill/Decode Pareto 그래프 이미지뿐이며 본문에 구체 수치는 없다. 측정 조건은 prefill 4개, decode 64개 SM100 GPU로 적혀 있다.",
+   "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+   "status": "confirmed"
+  },
+  {
+   "text": "DeepSeek은 DeepInfer를 자사 대규모 프로덕션 서비스를 구동하는 고성능 추론 프레임워크라고 설명한다.",
+   "sourceUrl": "https://aiweekly.co/ai-news-today/edition/2026-10-20",
+   "status": "company_claim"
+  },
+  {
+   "text": "클러스터당 하루 155T 토큰, 입력 캐시 적중률 96%, 코딩 생성 초당 300토큰 같은 수치가 보도됐으나 DeepSeek 자체 수치이며 독립 검증이 없고 README 본문에서도 확인되지 않았다.",
+   "sourceUrl": "https://aiweekly.co/alerts/deepseek-open-sources-deepinfer-its-v41-flash-serving-stack",
+   "status": "company_claim"
+  },
+  {
+   "text": "주로 vLLM 기반이고 SGLang·TensorRT-LLM에서 영감을 받았다는 보도가 있다(README 본문에서는 직접 확인하지 못함).",
+   "sourceUrl": "https://aiweekly.co/alerts/deepseek-open-sources-deepinfer-its-v41-flash-serving-stack",
+   "status": "unverified"
+  },
+  {
+   "text": "DeepSeek이 지난주 Huawei Ascend 950으로 2026년 말까지 사전학습을 진행할 계획이라고 밝혔다는 보도가 있다.",
+   "sourceUrl": "https://aiweekly.co/alerts/deepseek-open-sources-deepinfer-its-v41-flash-serving-stack",
+   "status": "unverified"
+  },
+  {
+   "text": "deepseek-recipe가 함께 공개됐고 향후 모델용 추론 코드도 같은 프로젝트에 공개할 계획이라는 보도가 있다.",
+   "sourceUrl": "https://letsdatascience.com/news/deepseek-open-sources-deepinfer-its-production-inference-eng-bc78c60d",
+   "status": "unverified"
+  }
+ ],
+ "limits": [
+  "성능 수치(155T 토큰, 96%, 초당 300토큰)는 DeepSeek 자체 수치이며 독립 검증이 없어 카드에 단정해 쓰면 안 된다.",
+  "KV 캐시·Prefill/Decode 분리·로드 밸런싱이 빠져 있어 이것만으로 완전한 서비스 스택은 아니다.",
+  "vLLM 기반 여부, Ascend 사전학습 계획, deepseek-recipe는 2차 보도로만 확인했다.",
+  "GitHub 별·포크 수는 기사마다 달라 사용하지 않는다."
+ ],
+ "conflicts": [
+  "aiweekly 기사 내에서 GitHub 별 5.5k와 '몇 시간 만에 8,000개 초과'가 서로 맞지 않는다.",
+  "일부 보도는 지원 모델을 DeepSeek-V4.1-Flash-1017로 적었으나 README에서는 이것이 V4.1-Flash의 기본 체크포인트로 확인돼 사실상 상충이 아니다.",
+  "aiweekly 알림은 성능 수치를 싣지만 같은 매체의 20일자 에디션과 README 본문에는 수치가 없다."
+ ],
+ "cards": [
+  {
+   "order": 1,
+   "cardId": "card_1",
+   "title": "최신: DeepInfer, Apache 2.0 공개",
+   "evidence": [
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "2026-10-20(보도 기준) Apache 2.0 라이선스로 GitHub에 공개됐다."
+    },
+    {
+     "url": "https://aiweekly.co/alerts/deepseek-open-sources-deepinfer-its-v41-flash-serving-stack",
+     "note": "DeepInfer 오픈소스 공개를 다룬 보도."
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 2,
+   "cardId": "card_2",
+   "title": "DeepInfer, 지원 범위",
+   "evidence": [
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "지원 모델, 지원 하드웨어, 요구 환경, 배치 불변 추론·결정론적 샘플링의 NVIDIA 전용 제한이 README에 명시돼 있다."
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 3,
+   "cardId": "card_3",
+   "title": "독자에게 의미: 빠진 기능",
+   "evidence": [
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "KV 캐시 시스템, Prefill/Decode 분리, 복제본 간 로드 밸런싱이 이번 릴리스에 포함되지 않았음이 확인된다."
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 4,
+   "cardId": "card_4",
+   "title": "아직 확인되지 않은 것",
+   "evidence": [
+    {
+     "url": "https://aiweekly.co/alerts/deepseek-open-sources-deepinfer-its-v41-flash-serving-stack",
+     "note": "155T 토큰, 96%, 초당 300토큰은 보도된 수치이며 DeepSeek 자체 수치로 독립 검증이 없다."
+    },
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "README에는 Pareto 그래프 이미지만 있고 본문에 구체 수치가 없다."
+    }
+   ],
+   "unsupportedNumbers": []
+  },
+  {
+   "order": 5,
+   "cardId": "card_5",
+   "title": "다음 행동: 원문부터 확인",
+   "evidence": [
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "공개 범위, 지원 모델·하드웨어, 미포함 기능의 원문."
+    }
+   ],
+   "unsupportedNumbers": []
+  }
+ ]
+}

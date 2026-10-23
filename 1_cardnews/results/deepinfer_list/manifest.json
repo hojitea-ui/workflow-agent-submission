@@ -1,0 +1,530 @@
+{
+ "exportId": "ex_20261023_233659",
+ "createdAt": "2026-10-23T23:36:59+09:00",
+ "projectId": "prj_8dbd074786",
+ "topic": "AI 최신소식",
+ "engine": "claude-cli",
+ "storyboardVersion": 3,
+ "format": "list",
+ "cardCount": 5,
+ "research": {
+  "basis": "2026-10-23T21:17:04+09:00",
+  "windowDays": 7,
+  "from": "2026-10-16",
+  "to": "2026-10-23"
+ },
+ "freshness": {
+  "researchBasis": "2026-10-23",
+  "publishedAt": [
+   "2026-10-20"
+  ],
+  "titleMayUseLatest": true
+ },
+ "approvedAt": "2026-10-23T23:14:08+09:00",
+ "cards": [
+  {
+   "id": "card_1",
+   "order": 1,
+   "role": "cover",
+   "file": "cards/card_01.png",
+   "sha256": "35a1e628361c6db21672b1053d28828e9c1e1d9176f209e16ff61dad9ceda0ba",
+   "bytes": 186899,
+   "width": 1080,
+   "height": 1350,
+   "title": "최신: DeepInfer, Apache 2.0 공개",
+   "body": "DeepSeek이 추론 프레임워크 DeepInfer를 GitHub에 오픈소스로 열었다. 오픈소스 추론 도구를 고르는 개발자가 지원 범위와 빠진 기능을 짚어 볼 소식이다.",
+   "keyline": "DeepSeek, 추론 프레임워크 DeepInfer를 Apache 2.0으로 공개",
+   "storyboardTitle": "최신: DeepInfer, Apache 2.0 공개",
+   "storyboardBody": "DeepSeek이 추론 프레임워크 DeepInfer를 GitHub에 오픈소스로 열었다. 오픈소스 추론 도구를 고르는 개발자가 지원 범위와 빠진 기능을 짚어 볼 소식이다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "2026-10-20(보도 기준) Apache 2.0 라이선스로 GitHub에 공개됐다."
+    },
+    {
+     "url": "https://aiweekly.co/alerts/deepseek-open-sources-deepinfer-its-v41-flash-serving-stack",
+     "note": "DeepInfer 오픈소스 공개를 다룬 보도."
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 1,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_1/v1/image.png",
+   "baseImageSha256": "43ce86c6b70d4c5cfa744a1d1e6ce15b2a4086b44b6faa2fe0483f5572f05b6c",
+   "typeset": {
+    "layout": {
+     "title": "최신: DeepInfer, Apache 2.0 공개",
+     "body": "DeepSeek이 추론 프레임워크 DeepInfer를 GitHub에 오픈소스로 열었다. 오픈소스 추론 도구를 고르는 개발자가 지원 범위와 빠진 기능을 짚어 볼 소식이다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 2줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bodyAutoSize",
+      "status": "pass",
+      "message": "본문이 그림을 가리지 않도록 글자를 44px로 자동 조정했습니다(휴대폰에서 약 16px)."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.2:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.0:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 26px, 본문 약 16px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T23:12:52+09:00"
+   },
+   "revisions": []
+  },
+  {
+   "id": "card_2",
+   "order": 2,
+   "role": "body",
+   "file": "cards/card_02.png",
+   "sha256": "d0f8ddc4d69e92360af939f3463ee7ad75a6e2a772309d1ee4d5d979fab9d32c",
+   "bytes": 130511,
+   "width": 1080,
+   "height": 1350,
+   "title": "DeepInfer, 지원 범위",
+   "body": "지원 모델은 DeepSeek-V4.1-Flash이고 환경은 Linux, GCC 13 이상, Python 3.12다. 배치 불변 추론과 결정론적 샘플링은 NVIDIA 전용이다.",
+   "keyline": "Nvidia SM100 GPU와 Ascend 950 NPU를 지원하나 일부 기능은 NVIDIA 전용",
+   "storyboardTitle": "DeepInfer, 지원 범위",
+   "storyboardBody": "지원 모델은 DeepSeek-V4.1-Flash이고 환경은 Linux, GCC 13 이상, Python 3.12다. 배치 불변 추론과 결정론적 샘플링은 NVIDIA 전용이다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "지원 모델, 지원 하드웨어, 요구 환경, 배치 불변 추론·결정론적 샘플링의 NVIDIA 전용 제한이 README에 명시돼 있다."
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 2,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_2/v2/image.png",
+   "baseImageSha256": "ad6731ad171f8b532cdd336e6c6902d12dd17b03daa54b81d83c74391eeb2273",
+   "typeset": {
+    "layout": {
+     "title": "DeepInfer, 지원 범위",
+     "body": "지원 모델은 DeepSeek-V4.1-Flash이고 환경은 Linux, GCC 13 이상, Python 3.12다. 배치 불변 추론과 결정론적 샘플링은 NVIDIA 전용이다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 1줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.9:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.0:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T23:13:10+09:00"
+   },
+   "revisions": [
+    {
+     "instruction": "그림이 이상해. 좌우의 두 장치가 스마트폰처럼 보여. 구성(가운데 둥근 칩 하나, 양옆에 연결된 장치 하나씩, 한쪽에만 잠금)은 그대로 두고, 양옆 장치를 화면이 없는 사각 반도체 칩 모양(작은 핀 다리가 있는 정사각형 칩)으로 바꿔 줘. 잠금은 오른쪽 칩에만 두고 \"일부 기능은 이 칩에서만\"으로 읽히게 그대로 둬. 새 물체는 추가하지 마.",
+     "kind": "image",
+     "reason": "양옆 장치를 화면 없는 핀 다리 달린 정사각형 반도체 칩으로 바꾸고, 가운데 둥근 블록·연결선·오른쪽 칩에만 잠금인 구도는 유지했다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "위쪽 30%와 아래쪽 약 29%는 비운다. 가운데에 중앙의 둥근 블록 하나가 좌우의 서로 다른 두 칩 모양과 선으로 연결되고, 한쪽 칩에만 작은 잠금 모양 블록이 붙은 구도를 가로 가운데에 둔다."
+     },
+     "after": {
+      "imagePlan": "위쪽 30%와 아래쪽 약 29%는 비운다. 가운데 영역의 가로 중앙에 둥근 블록 하나(중앙 칩)를 두고, 좌우에 화면이 없는 정사각형 반도체 칩을 하나씩 배치한다. 두 칩은 가장자리마다 작은 핀 다리가 나란히 달린 납작한 사각 패키지 모양이며, 서로 약간 다른 표면 무늬로 구분한다. 중앙 블록에서 양옆 칩으로 선이 각각 이어진다. 작은 잠금 모양 블록은 오른쪽 칩 모서리에만 붙여 '일부 기능은 이 칩에서만'으로 읽히게 하고, 왼쪽 칩에는 두지 않는다. 스마트폰·화면·버튼 같은 요소와 새 물체, 글자·숫자·로고는 넣지 않는다."
+     },
+     "at": "2026-10-23T22:59:55+09:00"
+    }
+   ]
+  },
+  {
+   "id": "card_3",
+   "order": 3,
+   "role": "body",
+   "file": "cards/card_03.png",
+   "sha256": "9ada13f03ec32f7bb7576242fe7f874b25bf109f0d4a6fdfa77ffc4861601192",
+   "bytes": 86233,
+   "width": 1080,
+   "height": 1350,
+   "title": "독자에게 의미: 빠진 기능",
+   "body": "KV 캐시 시스템, Prefill/Decode 분리, 복제본 간 로드 밸런싱이 포함되지 않았다. 그래서 이것만으로는 완전한 서비스 스택이 아니다.",
+   "keyline": "KV 캐시·Prefill/Decode 분리·로드 밸런싱은 이번 릴리스에 없다",
+   "storyboardTitle": "독자에게 의미: 빠진 기능",
+   "storyboardBody": "KV 캐시 시스템, Prefill/Decode 분리, 복제본 간 로드 밸런싱이 포함되지 않았다. 그래서 이것만으로는 완전한 서비스 스택이 아니다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "KV 캐시 시스템, Prefill/Decode 분리, 복제본 간 로드 밸런싱이 이번 릴리스에 포함되지 않았음이 확인된다."
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 1,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_3/v1/image.png",
+   "baseImageSha256": "a0f2c343dec5462142c12771175f30910a84f5910a071e0390334d5b05eb00eb",
+   "typeset": {
+    "layout": {
+     "title": "독자에게 의미: 빠진 기능",
+     "body": "KV 캐시 시스템, Prefill/Decode 분리, 복제본 간 로드 밸런싱이 포함되지 않았다. 그래서 이것만으로는 완전한 서비스 스택이 아니다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 2줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.1:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.0:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T23:13:18+09:00"
+   },
+   "revisions": []
+  },
+  {
+   "id": "card_4",
+   "order": 4,
+   "role": "body",
+   "file": "cards/card_04.png",
+   "sha256": "8674fcaa852a39e729758c32a37a40ad3c8dc8ee68488dcc470d067e984e79c9",
+   "bytes": 164691,
+   "width": 1080,
+   "height": 1350,
+   "title": "아직 확인되지 않은 것",
+   "body": "클러스터당 하루 155T 토큰과 캐시 적중률 96%는 DeepSeek 자체 수치라 독립 검증이 없다. 초당 300토큰은 한 매체의 보도 수치로 출처와 측정 조건이 불분명하다.",
+   "keyline": "성능 수치는 독립 검증이 없고 일부는 출처도 불분명하다",
+   "storyboardTitle": "아직 확인되지 않은 것",
+   "storyboardBody": "클러스터당 하루 155T 토큰과 캐시 적중률 96%는 DeepSeek 자체 수치라 독립 검증이 없다. 초당 300토큰은 한 매체의 보도 수치로 출처와 측정 조건이 불분명하다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://aiweekly.co/alerts/deepseek-open-sources-deepinfer-its-v41-flash-serving-stack",
+     "note": "155T 토큰, 96%, 초당 300토큰은 보도된 수치이며 DeepSeek 자체 수치로 독립 검증이 없다."
+    },
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "README에는 Pareto 그래프 이미지만 있고 본문에 구체 수치가 없다."
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 2,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_4/v2/image.png",
+   "baseImageSha256": "0265f03e57023613c1d591f8c33cb00259a53ad47c44ab61e4531372cf5834a5",
+   "typeset": {
+    "layout": {
+     "title": "아직 확인되지 않은 것",
+     "body": "클러스터당 하루 155T 토큰과 캐시 적중률 96%는 DeepSeek 자체 수치라 독립 검증이 없다. 초당 300토큰은 한 매체의 보도 수치로 출처와 측정 조건이 불분명하다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 1줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bodyAutoSize",
+      "status": "pass",
+      "message": "본문이 그림을 가리지 않도록 글자를 44px로 자동 조정했습니다(휴대폰에서 약 16px)."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.9:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.0:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 16px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T23:13:59+09:00"
+   },
+   "revisions": [
+    {
+     "instruction": "그림이 메시지와 안 맞아. 돋보기와 막대그래프의 구성은 그대로 두고 두 가지만 바꿔 줘. (1) 돋보기 손잡이에 붙은 체크 표시 배지를 완전히 빼 줘. (2) 막대그래프는 실제 데이터처럼 보이지 않게 막대 높이를 서로 비슷하고 흐릿하게 하고 위에 물음표 모양 흐림을 하나 얹어 \"아직 확인되지 않음\"으로 보이게 해 줘. 새 물체는 추가하지 마.",
+     "kind": "image",
+     "reason": "돋보기 손잡이의 체크 배지를 제거하고, 막대를 비슷한 높이의 흐린 상태로 바꾸며 물음표 모양 흐림을 얹어 미확인 느낌으로 수정했다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "위쪽 30%와 아래쪽 약 29%는 비운다. 가운데에 큰 돋보기가 흐릿한 막대 그래프 모양을 비추는 구도를 가로 가운데에 둔다."
+     },
+     "after": {
+      "imagePlan": "위쪽 30%와 아래쪽 약 29%는 비운다. 가운데에 큰 돋보기 하나가 흐릿한 막대 그래프를 비추는 구도를 가로 가운데에 둔다. 돋보기 손잡이에는 아무 배지나 표시도 붙이지 않고 손잡이만 깔끔하게 둔다. 막대 그래프는 막대 높이를 서로 비슷하게 하고 전체를 흐릿하고 옅게 처리해 실제 데이터처럼 보이지 않게 하며, 그 위에 물음표 모양의 부드러운 흐림 하나를 얹어 \"아직 확인되지 않음\"으로 보이게 한다. 글자·숫자·로고는 넣지 않고 새 물체도 추가하지 않는다."
+     },
+     "at": "2026-10-23T23:01:06+09:00"
+    }
+   ]
+  },
+  {
+   "id": "card_5",
+   "order": 5,
+   "role": "summary",
+   "file": "cards/card_05.png",
+   "sha256": "becd14e32e2f9718dbb23dceaaf26b8845bb99a5613862869d00d746ed9746b2",
+   "bytes": 115672,
+   "width": 1080,
+   "height": 1350,
+   "title": "다음 행동: 원문부터 확인",
+   "body": "확인된 내용은 Apache 2.0 공개, V4.1-Flash 지원, 두 종류 칩 지원(일부 기능은 NVIDIA만), 세 기능 미포함이다. 성능은 직접 측정해 판단하는 편이 안전하다.",
+   "keyline": "도입 전에 GitHub 원문에서 지원 범위와 빠진 기능을 직접 확인하자",
+   "storyboardTitle": "다음 행동: 원문부터 확인",
+   "storyboardBody": "확인된 내용은 Apache 2.0 공개, V4.1-Flash 지원, 두 종류 칩 지원(일부 기능은 NVIDIA만), 세 기능 미포함이다. 성능은 직접 측정해 판단하는 편이 안전하다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://github.com/deepseek-ai/DeepInfer",
+     "note": "공개 범위, 지원 모델·하드웨어, 미포함 기능의 원문."
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 1,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_5/v1/image.png",
+   "baseImageSha256": "5bcefaaa8152f3fc530db68b308705e44704107fabe82d80f90814650e8777bf",
+   "typeset": {
+    "layout": {
+     "title": "다음 행동: 원문부터 확인",
+     "body": "확인된 내용은 Apache 2.0 공개, V4.1-Flash 지원, 두 종류 칩 지원(일부 기능은 NVIDIA만), 세 기능 미포함이다. 성능은 직접 측정해 판단하는 편이 안전하다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 2줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bodyAutoSize",
+      "status": "pass",
+      "message": "본문이 그림을 가리지 않도록 글자를 44px로 자동 조정했습니다(휴대폰에서 약 16px)."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 13.9:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.0:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 16px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T23:14:04+09:00"
+   },
+   "revisions": []
+  }
+ ],
+ "files": {
+  "sources.json": {
+   "sha256": "d20c6ccb90554121f32fa7c19180ba17c4b2718476b81f729869a5a5a2dc17d3",
+   "bytes": 6975
+  },
+  "sources.md": {
+   "sha256": "39586fb52d583661da424302331e6a69763f0031fe0391bf1f7d69d1f31bba2c",
+   "bytes": 2610
+  },
+  "image_usage.json": {
+   "sha256": "384024182ac53cc9f760e244580aa1c8f20fe89023410c5da3e9f675a6976644",
+   "bytes": 25956
+  },
+  "image_usage.md": {
+   "sha256": "f9d6c55fcbdcb9bd290a6aa7aad410e257dafa7d925971958394747c6dd0988c",
+   "bytes": 23137
+  },
+  "cards/card_01.png": {
+   "sha256": "35a1e628361c6db21672b1053d28828e9c1e1d9176f209e16ff61dad9ceda0ba",
+   "bytes": 186899
+  },
+  "cards/card_02.png": {
+   "sha256": "d0f8ddc4d69e92360af939f3463ee7ad75a6e2a772309d1ee4d5d979fab9d32c",
+   "bytes": 130511
+  },
+  "cards/card_03.png": {
+   "sha256": "9ada13f03ec32f7bb7576242fe7f874b25bf109f0d4a6fdfa77ffc4861601192",
+   "bytes": 86233
+  },
+  "cards/card_04.png": {
+   "sha256": "8674fcaa852a39e729758c32a37a40ad3c8dc8ee68488dcc470d067e984e79c9",
+   "bytes": 164691
+  },
+  "cards/card_05.png": {
+   "sha256": "becd14e32e2f9718dbb23dceaaf26b8845bb99a5613862869d00d746ed9746b2",
+   "bytes": 115672
+  }
+ }
+}

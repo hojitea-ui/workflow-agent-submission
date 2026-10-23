@@ -1,0 +1,821 @@
+{
+ "exportId": "ex_20261024_002620",
+ "createdAt": "2026-10-24T00:26:20+09:00",
+ "projectId": "prj_5307e6de2a",
+ "topic": "AI 최신소식",
+ "engine": "claude-cli",
+ "storyboardVersion": 1,
+ "format": "story",
+ "cardCount": 7,
+ "research": {
+  "basis": "2026-10-23T20:28:37+09:00",
+  "windowDays": 7,
+  "from": "2026-10-16",
+  "to": "2026-10-23"
+ },
+ "freshness": {
+  "researchBasis": "2026-10-23",
+  "publishedAt": [
+   "2026-10-22"
+  ],
+  "titleMayUseLatest": true
+ },
+ "approvedAt": "2026-10-23T22:08:32+09:00",
+ "cards": [
+  {
+   "id": "card_1",
+   "order": 1,
+   "role": "cover",
+   "file": "cards/card_01.png",
+   "sha256": "e9cc1fa77e8337b281181da1aa37708f7ee3151571a327759a6f5c5541f9d9e0",
+   "bytes": 196406,
+   "width": 1080,
+   "height": 1350,
+   "title": "AI가 먼저 말을 거는 시대",
+   "body": "Anthropic이 선제형 에이전트 Claude Duet을 리서치 프리뷰로 공개했습니다. 접근은 미국 Pro·Max 구독자 대기자 명단 방식입니다.",
+   "keyline": "AI가 먼저 말을 거는 시대, Claude Duet 대기자 명단이 열렸습니다.",
+   "storyboardTitle": "AI가 먼저 말을 거는 시대",
+   "storyboardBody": "Anthropic이 선제형 에이전트 Claude Duet을 리서치 프리뷰로 공개했습니다. 접근은 미국 Pro·Max 구독자 대기자 명단 방식입니다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "Duet 리서치 프리뷰와 미국 Pro·Max 대기자 명단 방식 보도"
+    },
+    {
+     "url": "https://aiweekly.co/ai-news-today/edition/2026-10-22",
+     "note": "AI Weekly가 10월 22일판에서 대기자 명단을 요약 보도"
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 1,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_1/v1/image.png",
+   "baseImageSha256": "32e7e33afd2e0e7eefc8edf2f243270aa589ab455d8d784ca5ddda21a12da9c2",
+   "typeset": {
+    "layout": {
+     "title": "AI가 먼저 말을 거는 시대",
+     "body": "Anthropic이 선제형 에이전트 Claude Duet을 리서치 프리뷰로 공개했습니다. 접근은 미국 Pro·Max 구독자 대기자 명단 방식입니다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 2줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.0:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.4:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T20:44:28+09:00"
+   },
+   "revisions": []
+  },
+  {
+   "id": "card_2",
+   "order": 2,
+   "role": "body",
+   "file": "cards/card_02.png",
+   "sha256": "7ed96780766e776c0edf884ce9b311e544a1d428763aa7c8d85b8e62572ab812",
+   "bytes": 189260,
+   "width": 1080,
+   "height": 1350,
+   "title": "지금까지의 AI 비서",
+   "body": "AI 비서와 에이전트에 관심이 커졌지만, 대부분은 사용자가 먼저 질문해야 움직였습니다. 이번 소식은 그 흐름이 바뀌는 사례입니다.",
+   "keyline": "지금까지 AI는 내가 물어봐야 답하는 도구에 가까웠습니다.",
+   "storyboardTitle": "지금까지의 AI 비서",
+   "storyboardBody": "AI 비서와 에이전트에 관심이 커졌지만, 대부분은 사용자가 먼저 질문해야 움직였습니다. 이번 소식은 그 흐름이 바뀌는 사례입니다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "Duet을 먼저 챙기는 선제형 에이전트로 소개한 보도"
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 2,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_2/v2/image.png",
+   "baseImageSha256": "649b6322cba4d58981bbf7e07324cc64e092ab07dca25893ebd84957eaa3ba69",
+   "typeset": {
+    "layout": {
+     "title": "지금까지의 AI 비서",
+     "body": "AI 비서와 에이전트에 관심이 커졌지만, 대부분은 사용자가 먼저 질문해야 움직였습니다. 이번 소식은 그 흐름이 바뀌는 사례입니다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 1줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.7:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.4:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T22:06:30+09:00"
+   },
+   "revisions": [
+    {
+     "instruction": "그림이 이상해, 팔과 몸통의 연결이 자연스럽게 보이도록 정리해 줘. 기존 인물의 자세와 색상은 유지해 줘.",
+     "kind": "image",
+     "reason": "기존 자세와 색상은 유지하고, 팔이 어깨에서 몸통과 자연스럽게 이어지도록 실루엣 연결과 비례를 다듬는 imagePlan으로 수정했습니다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "가운데에 책상 앞에서 빈 말풍선 아이콘을 든 사용자 실루엣 하나를 가로 가운데 배치. 위·아래는 비움. 글자·실제 사람 없음."
+     },
+     "after": {
+      "imagePlan": "가운데 영역에 책상 앞에 앉아 빈 말풍선 아이콘을 든 사용자 실루엣 하나를 가로 가운데 배치. 기존 자세와 색상은 그대로 유지하되, 팔이 어깨 윤곽에서 자연스럽게 이어져 몸통과 하나의 연속된 실루엣으로 보이게 정리. 어깨–팔–손이 끊김이나 어긋남 없이 연결되고 팔 굵기와 비례는 몸통에 맞춤. 위쪽 30%와 아래쪽 약 29%는 비움. 글자·숫자·로고·실제 사람·실제 제품 화면 없음."
+     },
+     "at": "2026-10-23T20:59:27+09:00"
+    }
+   ]
+  },
+  {
+   "id": "card_3",
+   "order": 3,
+   "role": "body",
+   "file": "cards/card_03.png",
+   "sha256": "9242ccebcd986b5fb69440aa210193029463b502815f8ea0ed33d3b703172cb2",
+   "bytes": 174319,
+   "width": 1080,
+   "height": 1350,
+   "title": "놓치기 쉬운 일상",
+   "body": "이메일과 캘린더 같은 앱을 일일이 확인해야 하는 번거로움이 있습니다. Duet은 이런 연결 앱을 대신 살피도록 설계됐습니다.",
+   "keyline": "메일과 일정이 쌓이면 중요한 일을 직접 챙기기 어렵습니다.",
+   "storyboardTitle": "놓치기 쉬운 일상",
+   "storyboardBody": "이메일과 캘린더 같은 앱을 일일이 확인해야 하는 번거로움이 있습니다. Duet은 이런 연결 앱을 대신 살피도록 설계됐습니다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "연결된 앱을 확인하는 에이전트라는 설명"
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 9,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_3/v9/image.png",
+   "baseImageSha256": "854a1527ae2084bd7506aaf17d395afd82a857520d4c34ecd66a955e08184c7b",
+   "typeset": {
+    "layout": {
+     "title": "놓치기 쉬운 일상",
+     "body": "이메일과 캘린더 같은 앱을 일일이 확인해야 하는 번거로움이 있습니다. Duet은 이런 연결 앱을 대신 살피도록 설계됐습니다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 1줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.7:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.4:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T22:06:13+09:00"
+   },
+   "revisions": [
+    {
+     "instruction": "그림이 이상해, 겹쳐진 달력과 종이의 앞뒤 관계가 명확하게 보이도록 모서리와 겹침을 정리해 줘.",
+     "kind": "image",
+     "reason": "달력과 봉투가 흩어져 겹치던 구도를 앞에서 뒤로 층이 분명한 하나의 더미로 바꾸고, 모서리·윤곽선·그림자로 겹침 순서를 명확히 했다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "가운데에 쌓인 편지 봉투와 달력 아이콘이 흩어진 더미 하나를 가로 가운데 배치. 위·아래는 비움. 글자·숫자 없음."
+     },
+     "after": {
+      "imagePlan": "가운데 영역에 편지 봉투 3~4장이 한 줄 방향으로 비스듬히 겹쳐 쌓이고, 그 맨 앞에 달력 아이콘 한 개가 놓인 단정한 더미 하나를 가로 가운데 배치. 앞뒤 순서가 분명하도록 맨 앞 달력은 모서리가 또렷한 직각 사각형에 둥근 모서리를 살짝 주고, 뒤의 봉투들은 앞 물체에 가려지는 부분만 잘려 보이게 한다. 겹치는 곳마다 얇은 그림자와 뚜렷한 윤곽선으로 층을 구분하고, 물체 수는 적게 유지해 흩어지거나 뒤엉키지 않게 한다. 위·아래는 비움. 글자·숫자·로고 없음."
+     },
+     "at": "2026-10-23T21:02:26+09:00"
+    },
+    {
+     "instruction": "그림이 이상해, 일러스트를 수정 전 원본으로 되돌리고, 달력과 문서의 겹침만 자연스럽게 정리해 줘. 기존 오브젝트의 종류와 개수, 색상, 배치는 유지하고 새로운 요소를 추가하거나 전체 그림을 재구성하지 마.",
+     "kind": "image",
+     "reason": "그림을 원래 구성으로 되돌리고, 달력과 봉투가 겹치는 부분만 앞뒤 순서와 가려지는 방식을 정리했으며 모순된 모서리 설명을 바로잡았습니다. 오브젝트의 종류·개수·색상·배치는 그대로 두었습니다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "가운데 영역에 편지 봉투 3~4장이 한 줄 방향으로 비스듬히 겹쳐 쌓이고, 그 맨 앞에 달력 아이콘 한 개가 놓인 단정한 더미 하나를 가로 가운데 배치. 앞뒤 순서가 분명하도록 맨 앞 달력은 모서리가 또렷한 직각 사각형에 둥근 모서리를 살짝 주고, 뒤의 봉투들은 앞 물체에 가려지는 부분만 잘려 보이게 한다. 겹치는 곳마다 얇은 그림자와 뚜렷한 윤곽선으로 층을 구분하고, 물체 수는 적게 유지해 흩어지거나 뒤엉키지 않게 한다. 위·아래는 비움. 글자·숫자·로고 없음."
+     },
+     "after": {
+      "imagePlan": "가운데 영역에 편지 봉투 3~4장이 한 줄 방향으로 비스듬히 일정한 간격으로 겹쳐 쌓이고, 그 맨 앞에 달력 아이콘 한 개가 놓인 단정한 더미 하나를 가로 가운데 배치. 달력은 모서리를 살짝 둥글린 사각형으로 맨 앞에 완전히 온전하게 보이고, 뒤의 봉투들은 달력과 앞 봉투에 가려지는 부분만 자연스럽게 잘려 보인다. 달력이 봉투 위에 놓인 위치는 봉투 더미의 앞쪽 한 곳으로 정해 어긋나거나 뚫려 보이는 부분이 없게 하고, 겹치는 곳마다 얇은 그림자와 뚜렷한 윤곽선으로 앞뒤 층을 구분한다. 물체 수는 늘리지 않고 종류·개수·색상·배치는 기존 그대로 유지하며, 위·아래는 비움. 글자·숫자·로고 없음."
+     },
+     "at": "2026-10-23T21:04:48+09:00"
+    },
+    {
+     "instruction": "이전 그림(v1)으로 되돌리기",
+     "kind": "restore",
+     "reason": "그림 v4 → v1. 새로 만들지 않고 보관해 둔 그림을 다시 썼습니다.",
+     "notes": [],
+     "at": "2026-10-23T21:15:07+09:00"
+    },
+    {
+     "instruction": "그림: 기존의 파일 더미처럼 여러 문서가 겹쳐 쌓인 형식을 유지해 줘. 문서의 개수와 배치, 색상은 최대한 그대로 두고, 문서끼리 겹치는 부분과 모서리만 자연스럽게 정리해 줘. 이메일 봉투나 달력 등 새로운 오브젝트를 추가하거나 전체 구성을 바꾸지 마.",
+     "kind": "image",
+     "reason": "문서 더미 형식과 개수·색상·배치를 유지하고 봉투·달력을 뺀 뒤, 겹치는 부분과 모서리만 윤곽선·그림자·둥근 모서리로 정리했습니다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "가운데 영역에 편지 봉투 3~4장이 한 줄 방향으로 비스듬히 일정한 간격으로 겹쳐 쌓이고, 그 맨 앞에 달력 아이콘 한 개가 놓인 단정한 더미 하나를 가로 가운데 배치. 달력은 모서리를 살짝 둥글린 사각형으로 맨 앞에 완전히 온전하게 보이고, 뒤의 봉투들은 달력과 앞 봉투에 가려지는 부분만 자연스럽게 잘려 보인다. 달력이 봉투 위에 놓인 위치는 봉투 더미의 앞쪽 한 곳으로 정해 어긋나거나 뚫려 보이는 부분이 없게 하고, 겹치는 곳마다 얇은 그림자와 뚜렷한 윤곽선으로 앞뒤 층을 구분한다. 물체 수는 늘리지 않고 종류·개수·색상·배치는 기존 그대로 유지하며, 위·아래는 비움. 글자·숫자·로고 없음."
+     },
+     "after": {
+      "imagePlan": "가운데 영역에 문서(종이 서류) 3~4장이 한 줄 방향으로 비스듬히 일정한 간격으로 겹쳐 쌓인 단정한 파일 더미 하나를 가로 가운데 배치. 맨 앞 문서는 전체가 온전하게 보이고, 뒤의 문서들은 앞 문서에 가려지는 부분만 자연스럽게 잘려 보인다. 문서 모서리는 모두 살짝 둥글게 통일하고, 겹치는 곳마다 얇은 그림자와 뚜렷한 윤곽선으로 앞뒤 층을 구분하며, 어긋나거나 뚫려 보이는 부분이 없게 한다. 문서의 개수·색상·배치는 기존 그대로 유지하고, 봉투·달력 등 새로운 오브젝트는 넣지 않는다. 위·아래는 비움. 글자·숫자·로고 없음."
+     },
+     "at": "2026-10-23T21:15:53+09:00"
+    },
+    {
+     "instruction": "이전 그림(v1)으로 되돌리기",
+     "kind": "restore",
+     "reason": "그림 v5 → v1. 새로 만들지 않고 보관해 둔 그림을 다시 썼습니다.",
+     "notes": [],
+     "at": "2026-10-23T21:27:27+09:00"
+    },
+    {
+     "instruction": "기존의 파일 더미처럼 여러 문서가 겹쳐 쌓인 형식을 유지해 줘. 문서의 개수와 배치, 색상은 최대한 그대로 두고, 문서끼리 겹치는 부분과 모서리만 자연스럽게 정리해 줘. 이메일 봉투나 달력 등 새로운 오브젝트를 추가하거나 전체 구성을 바꾸지 마.",
+     "kind": "image",
+     "reason": "문서 개수·색상·배치와 겹쳐 쌓인 구성은 유지하고, 겹침 부분의 앞뒤 구분(그림자·윤곽선)과 모서리 둥글기만 정리하도록 imagePlan을 수정했습니다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "가운데 영역에 문서(종이 서류) 3~4장이 한 줄 방향으로 비스듬히 일정한 간격으로 겹쳐 쌓인 단정한 파일 더미 하나를 가로 가운데 배치. 맨 앞 문서는 전체가 온전하게 보이고, 뒤의 문서들은 앞 문서에 가려지는 부분만 자연스럽게 잘려 보인다. 문서 모서리는 모두 살짝 둥글게 통일하고, 겹치는 곳마다 얇은 그림자와 뚜렷한 윤곽선으로 앞뒤 층을 구분하며, 어긋나거나 뚫려 보이는 부분이 없게 한다. 문서의 개수·색상·배치는 기존 그대로 유지하고, 봉투·달력 등 새로운 오브젝트는 넣지 않는다. 위·아래는 비움. 글자·숫자·로고 없음."
+     },
+     "after": {
+      "imagePlan": "가운데 영역에 문서(종이 서류) 3~4장이 한 줄 방향으로 비스듬히 일정한 간격으로 겹쳐 쌓인 단정한 파일 더미 하나를 가로 가운데 배치. 맨 앞 문서는 전체가 온전하게 보이고, 뒤의 문서들은 앞 문서에 가려지는 부분만 자연스럽게 잘려 보인다. 모든 문서 모서리는 같은 정도로 살짝 둥글게 통일하고, 겹치는 곳마다 얇은 그림자와 뚜렷한 윤곽선을 넣어 앞뒤 층을 분명히 구분한다. 문서끼리 어긋나거나 겹침 부분이 뚫려 보이거나 모서리가 뾰족하게 튀어나온 곳이 없게 깔끔히 정리한다. 문서의 개수·색상·배치는 기존 그대로 유지하고, 봉투·달력 등 새로운 오브젝트는 넣지 않는다. 위·아래는 비움. 글자·숫자·로고 없음."
+     },
+     "at": "2026-10-23T21:27:48+09:00"
+    },
+    {
+     "instruction": "이전 그림(v6)으로 되돌리기",
+     "kind": "restore",
+     "reason": "그림 v7 → v6. 새로 만들지 않고 보관해 둔 그림을 다시 썼습니다.",
+     "notes": [],
+     "at": "2026-10-23T21:29:28+09:00"
+    },
+    {
+     "instruction": "그림이 이상해. 이번에는 구성을 바꿔도 돼. 메시지는 \"놓치기 쉬운 일상(메일과 일정)\"이야. 봉투 하나와 달력 하나만 나란히 놓고, 서로 겹치지 않게 간격을 둬. 둘 다 기울이지 말고 똑바로 세워서 같은 높이로 두고, 바닥에 옅은 그림자 하나를 깔아 떠 있어 보이지 않게 해. 가운데 영역 안에 작게 모아 줘.",
+     "kind": "image",
+     "reason": "기존 문서 더미 구도를 버리고 똑바로 선 봉투와 달력을 같은 높이로 나란히 두고 바닥 그림자를 넣은 구성으로 바꿨습니다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "가운데 영역에 문서(종이 서류) 3~4장이 한 줄 방향으로 비스듬히 일정한 간격으로 겹쳐 쌓인 단정한 파일 더미 하나를 가로 가운데 배치. 맨 앞 문서는 전체가 온전하게 보이고, 뒤의 문서들은 앞 문서에 가려지는 부분만 자연스럽게 잘려 보인다. 모든 문서 모서리는 같은 정도로 살짝 둥글게 통일하고, 겹치는 곳마다 얇은 그림자와 뚜렷한 윤곽선을 넣어 앞뒤 층을 분명히 구분한다. 문서끼리 어긋나거나 겹침 부분이 뚫려 보이거나 모서리가 뾰족하게 튀어나온 곳이 없게 깔끔히 정리한다. 문서의 개수·색상·배치는 기존 그대로 유지하고, 봉투·달력 등 새로운 오브젝트는 넣지 않는다. 위·아래는 비움. 글자·숫자·로고 없음."
+     },
+     "after": {
+      "imagePlan": "가운데 영역 안에 작게 모아, 봉투 하나와 달력 하나를 가로로 나란히 배치한다. 둘 다 기울이지 않고 똑바로 세워 같은 높이로 맞추고, 서로 겹치지 않도록 둘 사이에 적당한 간격을 둔다. 봉투는 단정한 닫힌 형태, 달력은 윗부분에 고리 두 개가 있는 단순한 한 장짜리 형태로 그리며, 달력 안에는 글자·숫자 없이 격자 칸만 옅게 표현한다. 두 오브젝트의 모서리는 같은 정도로 살짝 둥글게 통일하고 뚜렷한 윤곽선을 넣는다. 바닥에는 두 오브젝트 아래를 가로지르는 옅은 그림자 하나를 깔아 떠 있어 보이지 않게 한다. 위·아래는 비움. 글자·숫자·로고·사람·실제 화면 없음."
+     },
+     "at": "2026-10-23T21:36:46+09:00"
+    },
+    {
+     "instruction": "이전 그림(v1)으로 되돌리기",
+     "kind": "restore",
+     "reason": "그림 v8 → v1. 새로 만들지 않고 보관해 둔 그림을 다시 썼습니다.",
+     "notes": [],
+     "at": "2026-10-23T21:39:29+09:00"
+    },
+    {
+     "instruction": "그림이 이상해. 지금 그림(비스듬히 쌓인 봉투 더미와 양옆 달력 2개)의 개수·색·기울기는 그대로 두고 아래 세 가지를 고쳐 줘. (1) 봉투 네 장의 가로 길이를 지금의 약 70%로 줄여서 양옆 달력과 봉투가 겹치거나 달력이 잘리지 않게 해 줘. 달력 크기는 그대로. (2) 봉투끼리 쌓인 간격을 조금 넓혀서 가려진 봉투의 뚜껑 선이 끊겨 보이지 않고 앞뒤 순서가 분명하게 해 줘. (3) 왼쪽 아래 작은 봉투는 더미의 왼쪽 아래 모서리에 겹쳐 붙여 줘. 새 물체 추가 금지.",
+     "kind": "image",
+     "reason": "봉투 네 장의 가로 길이를 약 70%로 줄이고, 쌓인 간격을 넓혀 뚜껑 선과 앞뒤 순서가 보이게 했으며, 왼쪽 아래 작은 봉투를 더미 모서리에 붙였다. 개수·색·기울기·달력 크기는 유지하고 새 물체는 넣지 않았다.",
+     "notes": [],
+     "before": {
+      "imagePlan": "가운데 영역 안에 작게 모아, 봉투 하나와 달력 하나를 가로로 나란히 배치한다. 둘 다 기울이지 않고 똑바로 세워 같은 높이로 맞추고, 서로 겹치지 않도록 둘 사이에 적당한 간격을 둔다. 봉투는 단정한 닫힌 형태, 달력은 윗부분에 고리 두 개가 있는 단순한 한 장짜리 형태로 그리며, 달력 안에는 글자·숫자 없이 격자 칸만 옅게 표현한다. 두 오브젝트의 모서리는 같은 정도로 살짝 둥글게 통일하고 뚜렷한 윤곽선을 넣는다. 바닥에는 두 오브젝트 아래를 가로지르는 옅은 그림자 하나를 깔아 떠 있어 보이지 않게 한다. 위·아래는 비움. 글자·숫자·로고·사람·실제 화면 없음."
+     },
+     "after": {
+      "imagePlan": "가운데 영역 안에 비스듬히 쌓인 봉투 더미 하나를 중심 피사체로 두고, 그 양옆에 달력 하나씩 모두 두 개를 세운다. 봉투는 지금과 같은 네 장이고 색과 기울기도 그대로 둔다. 달력의 개수·색·크기·기울기도 그대로 둔다. 봉투 네 장의 가로 길이는 지금의 약 70%로 줄여서, 봉투가 양옆 달력과 겹치지 않고 달력도 화면 가장자리나 다른 물체에 잘리지 않게 한다. 봉투와 달력 사이에는 적당한 간격을 둔다. 쌓인 봉투끼리의 간격은 조금 넓혀서, 가려진 봉투의 뚜껑 선이 끊기지 않고 끝까지 보이게 하며, 맨 앞 봉투부터 뒤 봉투까지 앞뒤 순서가 분명하게 읽히도록 한다. 왼쪽 아래의 작은 봉투는 더미의 왼쪽 아래 모서리에 살짝 겹쳐 붙여서 따로 떨어져 보이지 않게 한다. 새 물체는 추가하지 않는다. 달력 안에는 글"
+     },
+     "at": "2026-10-23T21:41:15+09:00"
+    }
+   ]
+  },
+  {
+   "id": "card_4",
+   "order": 4,
+   "role": "body",
+   "file": "cards/card_04.png",
+   "sha256": "c597446b7c9585a11a406187a787ad4bad00e243fc7eee6cdb30a7908c7a5957",
+   "bytes": 130702,
+   "width": 1080,
+   "height": 1350,
+   "title": "먼저 챙겨 주는 비서",
+   "body": "도움이 필요할 때만 알리는 방식입니다. 이를 통해 질문에 답하는 AI에서 먼저 챙기는 비서로의 변화를 보여 줍니다.",
+   "keyline": "Duet은 연결된 앱을 확인해 아침 브리핑을 주고, 필요할 때만 알립니다.",
+   "storyboardTitle": "먼저 챙겨 주는 비서",
+   "storyboardBody": "도움이 필요할 때만 알리는 방식입니다. 이를 통해 질문에 답하는 AI에서 먼저 챙기는 비서로의 변화를 보여 줍니다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "아침 브리핑 제공, 필요할 때만 알림"
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 1,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_4/v1/image.png",
+   "baseImageSha256": "dfb897b00898a7e031eb9905e92f08d2c4e6cef6b8d0b04aaf7811d5fd11bf39",
+   "typeset": {
+    "layout": {
+     "title": "먼저 챙겨 주는 비서",
+     "body": "도움이 필요할 때만 알리는 방식입니다. 이를 통해 질문에 답하는 AI에서 먼저 챙기는 비서로의 변화를 보여 줍니다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 1줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 3줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.7:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.4:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T20:44:58+09:00"
+   },
+   "revisions": []
+  },
+  {
+   "id": "card_5",
+   "order": 5,
+   "role": "body",
+   "file": "cards/card_05.png",
+   "sha256": "11dde5e4dbda73cfbdf1aa44453d7feccc22a729dbb9a77d79b38ff868f658c1",
+   "bytes": 175132,
+   "width": 1080,
+   "height": 1350,
+   "title": "중요한 행동은 승인 먼저",
+   "body": "AI가 알아서 모두 처리하는 것이 아니라, 중요한 행동은 사용자가 확인한 뒤 진행되는 구조로 확인됐습니다.",
+   "keyline": "메시지 발송·결제·서명·삭제 전에는 먼저 사용자 승인을 받습니다.",
+   "storyboardTitle": "중요한 행동은 승인 먼저",
+   "storyboardBody": "AI가 알아서 모두 처리하는 것이 아니라, 중요한 행동은 사용자가 확인한 뒤 진행되는 구조로 확인됐습니다.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "발송·결제·서명·삭제 전 사용자 승인 요청"
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 1,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_5/v1/image.png",
+   "baseImageSha256": "6e38f1e8879d3b788a6fc91ae9fd5d861b81f0a40744b7984459a3b4d35b07bb",
+   "typeset": {
+    "layout": {
+     "title": "중요한 행동은 승인 먼저",
+     "body": "AI가 알아서 모두 처리하는 것이 아니라, 중요한 행동은 사용자가 확인한 뒤 진행되는 구조로 확인됐습니다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 2줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 3줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.1:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.4:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T20:45:05+09:00"
+   },
+   "revisions": []
+  },
+  {
+   "id": "card_6",
+   "order": 6,
+   "role": "body",
+   "file": "cards/card_06.png",
+   "sha256": "cc98f2dace53ac9ec6eea77f409e89a3d50c25097c84c4c3356fd32bd14e6e61",
+   "bytes": 229752,
+   "width": 1080,
+   "height": 1350,
+   "title": "기대 전에 알아둘 한계",
+   "body": "현재 미국 Pro·Max 구독자에게 대기자 명단으로만 제공되고, 한국 출시 일정은 아직 없습니다. Anthropic은 긴급도 판단이 틀릴 수 있다고 인정했습니다.",
+   "keyline": "미국 Pro·Max 대기자 명단 프리뷰라 한국에서는 바로 쓸 수 없습니다.",
+   "storyboardTitle": "기대 전에 알아둘 한계",
+   "storyboardBody": "한국 제공 계획은 확인되지 않았고 별도 가격도 공개되지 않았습니다. Opus 5.5 기반은 2차 매체 설명이며, Anthropic은 긴급도 오판 가능성을 인정했고 1Password 로그인은 공개 예정입니다.",
+   "textChanged": true,
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "미국 한정 대기자 명단, 오판 인정, 1Password 곧 지원, Opus 5.5는 2차 매체 설명"
+    },
+    {
+     "url": "https://aiweekly.co/ai-news-today/edition/2026-10-22",
+     "note": "짧은 요약뿐이며 가입 방법은 없음"
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 1,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_6/v1/image.png",
+   "baseImageSha256": "d8ca578de4367f053ab144eb8c04bf6d4528a1189ef969f41f5d1d83ddb0b105",
+   "typeset": {
+    "layout": {
+     "title": "기대 전에 알아둘 한계",
+     "body": "현재 미국 Pro·Max 구독자에게 대기자 명단으로만 제공되고, 한국 출시 일정은 아직 없습니다. Anthropic은 긴급도 판단이 틀릴 수 있다고 인정했습니다.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 1줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 4줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.7:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.4:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T22:05:55+09:00"
+   },
+   "revisions": [
+    {
+     "instruction": "글: 핵심 조건을 유지하며 두 문장으로 줄여 줘. 미국 Pro·Max 구독자 대상 대기자 명단 방식, 한국 출시 일정 미안내, 추가 요금 및 사용 한도, 오판 가능성, 1Password 기능의 제공 예정 상태를 정확하게 반영해 줘.\n\n그림: 기존에 발생한 텍스트와 그림의 겹침 오류를 수정해 줘. 배경과 일러스트는 그대로 유지해 줘.",
+     "kind": "text",
+     "reason": "글과 그림 요청이 함께 와서 글을 우선해 본문을 두 문장으로 줄이고, 대기자 명단·한국 일정 미안내·가격 미공개·오판 인정·1Password 공개 예정을 유지했습니다. 출처에 없는 추가 요금·사용 한도는 단정하지 않았고, 그림 겹침 수정은 이번에 반영하지 못했습니다.",
+     "notes": [
+      "원문에 있던 숫자가 빠졌습니다: 2, 5.5 — 핵심 조건이 빠지지 않았는지 확인하세요."
+     ],
+     "before": {
+      "title": "기대 전에 알아둘 한계",
+      "body": "한국 제공 계획은 확인되지 않았고 별도 가격도 공개되지 않았습니다. Opus 5.5 기반은 2차 매체 설명이며, Anthropic은 긴급도 오판 가능성을 인정했고 1Password 로그인은 공개 예정입니다."
+     },
+     "after": {
+      "title": "기대 전에 알아둘 한계",
+      "body": "미국 Pro·Max 구독자 대상 대기자 명단 방식이며 한국 출시 일정과 별도 가격은 공개되지 않았습니다. Anthropic은 긴급도 오판 가능성을 인정했고, 1Password 로그인은 공개 예정입니다."
+     },
+     "at": "2026-10-23T21:45:10+09:00"
+    },
+    {
+     "instruction": "글 고쳐 줘. \"현재 미국 Pro·Max 구독자에게 대기자 명단으로만 제공되고, 한국 출시 일정은 아직 없습니다. Anthropic은 긴급도 판단이 틀릴 수 있다고 인정했습니다.\"",
+     "kind": "text",
+     "reason": "본문을 요청하신 두 문장으로 바꿨습니다. 제목은 그대로 두었고, 1Password 로그인 '공개 예정' 문장은 요청 문구에 없어 뺐습니다.",
+     "notes": [
+      "원문에 있던 숫자가 빠졌습니다: 1 — 핵심 조건이 빠지지 않았는지 확인하세요."
+     ],
+     "before": {
+      "title": "기대 전에 알아둘 한계",
+      "body": "미국 Pro·Max 구독자 대상 대기자 명단 방식이며 한국 출시 일정과 별도 가격은 공개되지 않았습니다. Anthropic은 긴급도 오판 가능성을 인정했고, 1Password 로그인은 공개 예정입니다."
+     },
+     "after": {
+      "title": "기대 전에 알아둘 한계",
+      "body": "현재 미국 Pro·Max 구독자에게 대기자 명단으로만 제공되고, 한국 출시 일정은 아직 없습니다. Anthropic은 긴급도 판단이 틀릴 수 있다고 인정했습니다."
+     },
+     "at": "2026-10-23T22:04:33+09:00"
+    }
+   ]
+  },
+  {
+   "id": "card_7",
+   "order": 7,
+   "role": "summary",
+   "file": "cards/card_07.png",
+   "sha256": "556a0594161d71da309bbfd06ebc12104cd9f5e6fafa5c004767bdd9fb66d484",
+   "bytes": 166498,
+   "width": 1080,
+   "height": 1350,
+   "title": "정리: 기대는 차분하게",
+   "body": "Duet은 아침 브리핑과 승인 절차를 갖춘 프리뷰입니다. 정확한 내용은 원문 보도와 Anthropic의 추가 안내로 확인해 보세요.",
+   "keyline": "먼저 챙기는 AI의 흐름은 분명하지만 지금은 지켜보는 단계입니다.",
+   "storyboardTitle": "정리: 기대는 차분하게",
+   "storyboardBody": "Duet은 아침 브리핑과 승인 절차를 갖춘 프리뷰입니다. 정확한 내용은 원문 보도와 Anthropic의 추가 안내로 확인해 보세요.",
+   "textChanged": false,
+   "evidence": [
+    {
+     "url": "https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app",
+     "note": "앞서 정리한 프리뷰·승인·한계 내용의 원문"
+    },
+    {
+     "url": "https://runtimewire.com/article/anthropic-s-claude-duet-uses-claude-code-routines-for-scheduled-check-ins",
+     "note": "점검 주기를 다룬 다른 매체 보도로 추가 확인용"
+    }
+   ],
+   "unsupportedNumbers": [],
+   "imageVersion": 1,
+   "imageTool": "claude-cli SVG + 브라우저",
+   "baseImage": "cards/card_7/v1/image.png",
+   "baseImageSha256": "6268ce9a9de5e08486274790a6f790f84e7d0401d463223de11db8dc981f196d",
+   "typeset": {
+    "layout": {
+     "title": "정리: 기대는 차분하게",
+     "body": "Duet은 아침 브리핑과 승인 절차를 갖춘 프리뷰입니다. 정확한 내용은 원문 보도와 Anthropic의 추가 안내로 확인해 보세요.",
+     "titleSize": null,
+     "bodySize": null,
+     "color": "auto",
+     "scrim": 70,
+     "bodyAnchor": "bottom"
+    },
+    "ok": true,
+    "checks": [
+     {
+      "key": "font",
+      "status": "pass",
+      "message": "글꼴 malgun.ttf(한국어)를 썼습니다."
+     },
+     {
+      "key": "titleFit",
+      "status": "pass",
+      "message": "제목이 2줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "bodyFit",
+      "status": "pass",
+      "message": "본문이 3줄로 영역 안에 들어갑니다."
+     },
+     {
+      "key": "overlap",
+      "status": "pass",
+      "message": "제목이 위쪽 빈 영역 안에 있어 그림과 겹치지 않습니다."
+     },
+     {
+      "key": "bandOverlap",
+      "status": "pass",
+      "message": "본문 바탕 띠가 그림을 가리지 않습니다."
+     },
+     {
+      "key": "titleContrast",
+      "status": "pass",
+      "message": "제목과 배경의 대비 14.0:1 (기준 3.0 이상)."
+     },
+     {
+      "key": "bodyContrast",
+      "status": "pass",
+      "message": "본문과 배경의 대비 14.4:1 (기준 4.5 이상)."
+     },
+     {
+      "key": "phone",
+      "status": "pass",
+      "message": "휴대폰(폭 390px)에서 제목 약 32px, 본문 약 17px로 보입니다."
+     }
+    ],
+    "savedAt": "2026-10-23T22:06:51+09:00"
+   },
+   "revisions": []
+  }
+ ],
+ "files": {
+  "sources.json": {
+   "sha256": "2451818235140be33eeaa02d084215e69ee2e9e4b5f7f8c9dc7e7bd6fcb87bf3",
+   "bytes": 7961
+  },
+  "sources.md": {
+   "sha256": "17c374f65d257ad3d0f65d2dc518184397ba46a99615c4402faceccabd5e963a",
+   "bytes": 3575
+  },
+  "image_usage.json": {
+   "sha256": "872f3904880cc3340e4c1416156d74cb5b91ad600b767aeea7cdb08d991aab5c",
+   "bytes": 30319
+  },
+  "image_usage.md": {
+   "sha256": "ec726703de358f78b68297cb9f830ad24081482dd5fa342cacaf05a3420fe0a3",
+   "bytes": 27117
+  },
+  "cards/card_01.png": {
+   "sha256": "e9cc1fa77e8337b281181da1aa37708f7ee3151571a327759a6f5c5541f9d9e0",
+   "bytes": 196406
+  },
+  "cards/card_02.png": {
+   "sha256": "7ed96780766e776c0edf884ce9b311e544a1d428763aa7c8d85b8e62572ab812",
+   "bytes": 189260
+  },
+  "cards/card_03.png": {
+   "sha256": "9242ccebcd986b5fb69440aa210193029463b502815f8ea0ed33d3b703172cb2",
+   "bytes": 174319
+  },
+  "cards/card_04.png": {
+   "sha256": "c597446b7c9585a11a406187a787ad4bad00e243fc7eee6cdb30a7908c7a5957",
+   "bytes": 130702
+  },
+  "cards/card_05.png": {
+   "sha256": "11dde5e4dbda73cfbdf1aa44453d7feccc22a729dbb9a77d79b38ff868f658c1",
+   "bytes": 175132
+  },
+  "cards/card_06.png": {
+   "sha256": "cc98f2dace53ac9ec6eea77f409e89a3d50c25097c84c4c3356fd32bd14e6e61",
+   "bytes": 229752
+  },
+  "cards/card_07.png": {
+   "sha256": "556a0594161d71da309bbfd06ebc12104cd9f5e6fafa5c004767bdd9fb66d484",
+   "bytes": 166498
+  }
+ }
+}

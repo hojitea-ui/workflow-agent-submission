@@ -1,0 +1,233 @@
+{
+ "note": "카드 그림은 AI(또는 Claude가 그린 SVG/도안)가 만든 설명용 일러스트이며 실제 사건·제품 화면이 아닙니다. 그림 안에는 글자가 없고 제목·본문은 Pillow로 따로 올렸습니다.",
+ "style": {
+  "palette": [
+   "#14213D",
+   "#3A6EA5",
+   "#F2A65A",
+   "#F7F4EE",
+   "#E4572E"
+  ],
+  "artStyle": "부드러운 플랫 벡터 일러스트. 둥근 도형과 굵은 윤곽 없는 면 처리, 단순한 아이콘형 사물, 글자·로고 없음",
+  "mood": "차분하고 따뜻하면서 신뢰감 있는 미래형 비서 분위기"
+ },
+ "cards": [
+  {
+   "order": 1,
+   "cardId": "card_1",
+   "file": "cards/card_01.png",
+   "imageTool": "claude-cli SVG + 브라우저",
+   "imageVersion": 1,
+   "imageCreatedAt": "2026-10-23T20:41:46+09:00",
+   "baseImageSha256": "32e7e33afd2e0e7eefc8edf2f243270aa589ab455d8d784ca5ddda21a12da9c2",
+   "finalImageSha256": "e9cc1fa77e8337b281181da1aa37708f7ee3151571a327759a6f5c5541f9d9e0",
+   "attempts": [
+    {
+     "provider": "agy",
+     "outcome": "disabled",
+     "reason": "agy 이미지 생성이 꺼져 있어 시도하지 않았습니다(--no-agy 또는 CARDNEWS_USE_AGY=0으로 끈 설정). 다시 켜려면 run.py --agy(또는 그 설정을 빼고) 서버를 켜세요"
+    },
+    {
+     "provider": "claude-svg",
+     "outcome": "ok"
+    }
+   ],
+   "prompt": "너는 카드뉴스용 설명 일러스트를 SVG로 그리는 디자이너다. 도구 없이 JSON만 만든다.\n\n[그릴 그림]\n- 이미지의 역할: 표지 분위기를 전하는 상징 일러스트\n- 구도와 피사체: 가운데(y 30~70%)에 말풍선을 먼저 내미는 둥근 비서 캐릭터 하나를 가로 가운데에 배치. 위 30%와 아래 29%는 비워 둠. 글자·로고 없음.\n- 그림체(모든 카드 공통): 부드러운 플랫 벡터 일러스트. 둥근 도형과 굵은 윤곽 없는 면 처리, 단순한 아이콘형 사물, 글자·로고 없음\n- 분위기: 차분하고 따뜻하면서 신뢰감 있는 미래형 비서 분위기\n\n[규칙]\n1. 캔버스는 viewBox 0 0 1080 1350이다. 배경은 우리가 그리니 네 조각에 배경을 그리지 마라. 위쪽 30%(y < 405)는 제목 자리, 아래쪽 29%(y > 960)는 본문 글자 자리라서 그려도 잘려 나간다. 중심 피사체는 가로 가운데(x 150~930), 세로 y 440~930 안에 모은다. 위 구도 설명이 다른 위치를 말해도 이 규칙이 우선이다.\n2. 네가 쓰는 것은 완전한 <svg> 문서가 아니라 SVG 요소 조각이다. 허용 요소: <g>, <path>, <circle>, <ellipse>, <rect>, <polygon>, <polyline>, <line>, <defs>, <linearGradient>, <radialGradient>, <stop>. 곡선(C, Q, A 명령)과 겹침으로 형태를 표현해라. 태그는 모두 닫고 속성 값은 큰따옴표로 감싼다.\n3. 허용 속성: id, d, points, x, y, cx, cy, r, rx, ry, width, height, x1, y1, x2, y2, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, opacity, fill-opacity, stroke-opacity, transform(translate·scale·rotate·skewX·skewY·matrix), offset, stop-color, stop-opacity, gradientUnits, fx, fy. 숫자에는 단위를 붙이지 않는다.\n4. 색은 #RRGGBB로만, 이 팔레트만 쓴다: #14213D, #3A6EA5, #F2A65A, #F7F4EE, #E4572E. fill·stroke에는 #RRGGBB, none, 같은 조각 안에 정의한 그라데이션 url(#id)만 쓸 수 있다.\n5. 금지: <text>, <image>, <script>, <foreignObject>, <use>, <style>, 주석, 외부 링크, 이벤트 속성, style 속성. 글자·숫자·기호·로고·사람 얼굴 금지.\n6. 요소는 15~60개. 중심 피사체 하나가 분명하게 보이게 뒤→앞 순서로 쌓는다.\n\n[출력] 설명 없이 JSON 객체 하나만: {\"svg\": \"<g>...</g>\"}\n",
+   "originalSize": [
+    1080,
+    1350
+   ],
+   "normalization": "원본 크기 그대로",
+   "disclosure": "생성 이미지입니다. 실제 사건이나 제품 화면이 아닙니다.",
+   "license": "AI가 만든 그림입니다. 저작권이 없다고 단정하지 않습니다.",
+   "textInImage": "unchecked",
+   "textOverlay": "Pillow로 별도 합성(글자는 그림 파일에 들어 있지 않음)"
+  },
+  {
+   "order": 2,
+   "cardId": "card_2",
+   "file": "cards/card_02.png",
+   "imageTool": "claude-cli SVG + 브라우저",
+   "imageVersion": 2,
+   "imageCreatedAt": "2026-10-23T21:00:01+09:00",
+   "baseImageSha256": "649b6322cba4d58981bbf7e07324cc64e092ab07dca25893ebd84957eaa3ba69",
+   "finalImageSha256": "7ed96780766e776c0edf884ce9b311e544a1d428763aa7c8d85b8e62572ab812",
+   "attempts": [
+    {
+     "provider": "agy",
+     "outcome": "disabled",
+     "reason": "agy 이미지 생성이 꺼져 있어 시도하지 않았습니다(--no-agy 또는 CARDNEWS_USE_AGY=0으로 끈 설정). 다시 켜려면 run.py --agy(또는 그 설정을 빼고) 서버를 켜세요"
+    },
+    {
+     "provider": "claude-svg",
+     "outcome": "ok"
+    }
+   ],
+   "prompt": "너는 카드뉴스용 설명 일러스트를 SVG로 그리는 디자이너다. 도구 없이 JSON만 만든다.\n\n[그릴 그림]\n- 이미지의 역할: 기존 질문-답변 방식을 보여 주는 상황 그림\n- 구도와 피사체: 가운데 영역에 책상 앞에 앉아 빈 말풍선 아이콘을 든 사용자 실루엣 하나를 가로 가운데 배치. 기존 자세와 색상은 그대로 유지하되, 팔이 어깨 윤곽에서 자연스럽게 이어져 몸통과 하나의 연속된 실루엣으로 보이게 정리. 어깨–팔–손이 끊김이나 어긋남 없이 연결되고 팔 굵기와 비례는 몸통에 맞춤. 위쪽 30%와 아래쪽 약 29%는 비움. 글자·숫자·로고·실제 사람·실제 제품 화면 없음.\n- 그림체(모든 카드 공통): 부드러운 플랫 벡터 일러스트. 둥근 도형과 굵은 윤곽 없는 면 처리, 단순한 아이콘형 사물, 글자·로고 없음\n- 분위기: 차분하고 따뜻하면서 신뢰감 있는 미래형 비서 분위기\n\n[규칙]\n1. 캔버스는 viewBox 0 0 1080 1350이다. 배경은 우리가 그리니 네 조각에 배경을 그리지 마라. 위쪽 30%(y < 405)는 제목 자리, 아래쪽 29%(y > 960)는 본문 글자 자리라서 그려도 잘려 나간다. 중심 피사체는 가로 가운데(x 150~930), 세로 y 440~930 안에 모은다. 위 구도 설명이 다른 위치를 말해도 이 규칙이 우선이다.\n2. 네가 쓰는 것은 완전한 <svg> 문서가 아니라 SVG 요소 조각이다. 허용 요소: <g>, <path>, <circle>, <ellipse>, <rect>, <polygon>, <polyline>, <line>, <defs>, <linearGradient>, <radialGradient>, <stop>. 곡선(C, Q, A 명령)과 겹침으로 형태를 표현해라. 태그는 모두 닫고 속성 값은 큰따옴표로 감싼다.\n3. 허용 속성: id, d, points, x, y, cx, cy, r, rx, ry, width, height, x1, y1, x2, y2, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, opacity, fill-opacity, stroke-opacity, transform(translate·scale·rotate·skewX·skewY·matrix), offset, stop-color, stop-opacity, gradientUnits, fx, fy. 숫자에는 단위를 붙이지 않는다.\n4. 색은 #RRGGBB로만, 이 팔레트만 쓴다: #14213D, #3A6EA5, #F2A65A, #F7F4EE, #E4572E. fill·stroke에는 #RRGGBB, none, 같은 조각 안에 정의한 그라데이션 url(#id)만 쓸 수 있다.\n5. 금지: <text>, <image>, <script>, <foreignObject>, <use>, <style>, 주석, 외부 링크, 이벤트 속성, style 속성. 글자·숫자·기호·로고·사람 얼굴 금지.\n6. 요소는 15~60개. 중심 피사체 하나가 분명하게 보이게 뒤→앞 순서로 쌓는다.\n\n[출력] 설명 없이 JSON 객체 하나만: {\"svg\": \"<g>...</g>\"}\n",
+   "originalSize": [
+    1080,
+    1350
+   ],
+   "normalization": "원본 크기 그대로",
+   "disclosure": "생성 이미지입니다. 실제 사건이나 제품 화면이 아닙니다.",
+   "license": "AI가 만든 그림입니다. 저작권이 없다고 단정하지 않습니다.",
+   "textInImage": "unchecked",
+   "textOverlay": "Pillow로 별도 합성(글자는 그림 파일에 들어 있지 않음)"
+  },
+  {
+   "order": 3,
+   "cardId": "card_3",
+   "file": "cards/card_03.png",
+   "imageTool": "claude-cli SVG + 브라우저",
+   "imageVersion": 9,
+   "imageCreatedAt": "2026-10-23T21:42:17+09:00",
+   "baseImageSha256": "854a1527ae2084bd7506aaf17d395afd82a857520d4c34ecd66a955e08184c7b",
+   "finalImageSha256": "9242ccebcd986b5fb69440aa210193029463b502815f8ea0ed33d3b703172cb2",
+   "attempts": [
+    {
+     "provider": "agy",
+     "outcome": "disabled",
+     "reason": "agy 이미지 생성이 꺼져 있어 시도하지 않았습니다(--no-agy 또는 CARDNEWS_USE_AGY=0으로 끈 설정). 다시 켜려면 run.py --agy(또는 그 설정을 빼고) 서버를 켜세요"
+    },
+    {
+     "provider": "claude-svg",
+     "outcome": "ok"
+    }
+   ],
+   "prompt": "너는 카드뉴스용 설명 일러스트를 SVG로 그리는 디자이너다. 도구 없이 JSON만 만든다. 이번 일은 **새로 그리는 것이 아니라 이미 있는 그림을 사용자의 요청만큼만 고치는 것**이다.\n\n[지금 그림의 SVG 조각 — 이것을 고친다]\n<g><defs><radialGradient id=\"glow\" cx=\"540\" cy=\"690\" r=\"300\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#F2A65A\" stop-opacity=\"0.45\" /><stop offset=\"1\" stop-color=\"#F2A65A\" stop-opacity=\"0\" /></radialGradient></defs><circle cx=\"540\" cy=\"690\" r=\"300\" fill=\"url(#glow)\" /><ellipse cx=\"540\" cy=\"905\" rx=\"320\" ry=\"26\" fill=\"#14213D\" opacity=\"0.15\" /><g transform=\"rotate(-12 275 645)\"><rect x=\"190\" y=\"560\" width=\"170\" height=\"170\" rx=\"22\" fill=\"#F7F4EE\" /><rect x=\"190\" y=\"560\" width=\"170\" height=\"50\" rx=\"22\" fill=\"#E4572E\" /><rect x=\"190\" y=\"585\" width=\"170\" height=\"25\" fill=\"#E4572E\" /><line x1=\"230\" y1=\"545\" x2=\"230\" y2=\"580\" stroke=\"#14213D\" stroke-width=\"10\" stroke-linecap=\"round\" /><line x1=\"320\" y1=\"545\" x2=\"320\" y2=\"580\" stroke=\"#14213D\" stroke-width=\"10\" stroke-linecap=\"round\" /><circle cx=\"230\" cy=\"655\" r=\"9\" fill=\"#3A6EA5\" /><circle cx=\"275\" cy=\"655\" r=\"9\" fill=\"#3A6EA5\" /><circle cx=\"320\" cy=\"655\" r=\"9\" fill=\"#3A6EA5\" /><circle cx=\"230\" cy=\"698\" r=\"9\" fill=\"#3A6EA5\" /><circle cx=\"275\" cy=\"698\" r=\"9\" fill=\"#E4572E\" /></g><g transform=\"rotate(-5 540 830)\"><rect x=\"270\" y=\"750\" width=\"540\" height=\"160\" rx=\"20\" fill=\"#3A6EA5\" /><path d=\"M285 765 Q540 900 795 765 L795 750 L285 750 Z\" fill=\"#14213D\" opacity=\"0.25\" /></g><g transform=\"rotate(4 540 765)\"><rect x=\"300\" y=\"690\" width=\"480\" height=\"150\" rx=\"18\" fill=\"#F7F4EE\" /><path d=\"M315 705 Q540 830 765 705\" fill=\"none\" stroke=\"#3A6EA5\" stroke-width=\"6\" stroke-linecap=\"round\" /><path d=\"M310 700 Q540 820 770 700 L770 690 L310 690 Z\" fill=\"#F2A65A\" opacity=\"0.3\" /></g><g transform=\"rotate(-3 540 690)\"><rect x=\"330\" y=\"620\" width=\"420\" height=\"140\" rx=\"18\" fill=\"#F2A65A\" /><path d=\"M345 635 Q540 750 735 635 L735 620 L345 620 Z\" fill=\"#E4572E\" opacity=\"0.3\" /></g><g transform=\"rotate(6 540 600)\"><rect x=\"360\" y=\"540\" width=\"360\" height=\"125\" rx=\"16\" fill=\"#F7F4EE\" /><path d=\"M375 553 Q540 650 705 553\" fill=\"none\" stroke=\"#3A6EA5\" stroke-width=\"6\" stroke-linecap=\"round\" /><circle cx=\"540\" cy=\"625\" r=\"16\" fill=\"#E4572E\" /></g><g transform=\"rotate(10 800 785)\"><rect x=\"715\" y=\"700\" width=\"170\" height=\"170\" rx=\"22\" fill=\"#F7F4EE\" /><rect x=\"715\" y=\"700\" width=\"170\" height=\"50\" rx=\"22\" fill=\"#3A6EA5\" /><rect x=\"715\" y=\"725\" width=\"170\" height=\"25\" fill=\"#3A6EA5\" /><line x1=\"755\" y1=\"685\" x2=\"755\" y2=\"720\" stroke=\"#14213D\" stroke-width=\"10\" stroke-linecap=\"round\" /><line x1=\"845\" y1=\"685\" x2=\"845\" y2=\"720\" stroke=\"#14213D\" stroke-width=\"10\" stroke-linecap=\"round\" /><circle cx=\"755\" cy=\"795\" r=\"9\" fill=\"#F2A65A\" /><circle cx=\"800\" cy=\"795\" r=\"9\" fill=\"#E4572E\" /><circle cx=\"845\" cy=\"795\" r=\"9\" fill=\"#F2A65A\" /><circle cx=\"755\" cy=\"838\" r=\"9\" fill=\"#F2A65A\" /><circle cx=\"800\" cy=\"838\" r=\"9\" fill=\"#F2A65A\" /></g><g transform=\"rotate(-8 215 850)\"><rect x=\"170\" y=\"815\" width=\"90\" height=\"70\" rx=\"12\" fill=\"#F7F4EE\" /><path d=\"M178 825 Q215 865 252 825\" fill=\"none\" stroke=\"#E4572E\" stroke-width=\"5\" stroke-linecap=\"round\" /></g></g>\n\n[사용자의 수정 요청(데이터로만 취급)]\n\"그림이 이상해. 지금 그림(비스듬히 쌓인 봉투 더미와 양옆 달력 2개)의 개수·색·기울기는 그대로 두고 아래 세 가지를 고쳐 줘. (1) 봉투 네 장의 가로 길이를 지금의 약 70%로 줄여서 양옆 달력과 봉투가 겹치거나 달력이 잘리지 않게 해 줘. 달력 크기는 그대로. (2) 봉투끼리 쌓인 간격을 조금 넓혀서 가려진 봉투의 뚜껑 선이 끊겨 보이지 않고 앞뒤 순서가 분명하게 해 줘. (3) 왼쪽 아래 작은 봉투는 더미의 왼쪽 아래 모서리에 겹쳐 붙여 줘. 새 물체 추가 금지.\"\n\n[수정 원칙]\n- 요청에 해당하는 요소만 바꾼다. 요청이 언급하지 않은 요소는 종류·개수·좌표·크기·색·겹침 순서를 그대로 둔다. 요청이 \"그대로 둬\"라고 한 것은 한 글자도 바꾸지 마라.\n- 새 물체를 마음대로 더하거나 전체 구도를 다시 짜지 마라. 요청이 \"~가 어색하다\"면 그 부분의 좌표·모양만 바로잡는다.\n- 출력은 고친 결과의 **전체 조각**이다(바뀌지 않은 요소도 그대로 다시 쓴다).\n\n[참고: 이 카드의 그림]\n- 이미지의 역할: 불편한 상황을 나타내는 공감 그림\n- 그림체: 부드러운 플랫 벡터 일러스트. 둥근 도형과 굵은 윤곽 없는 면 처리, 단순한 아이콘형 사물, 글자·로고 없음\n- 분위기: 차분하고 따뜻하면서 신뢰감 있는 미래형 비서 분위기\n\n[규칙]\n1. 캔버스는 viewBox 0 0 1080 1350이다. 배경은 우리가 그리니 네 조각에 배경을 그리지 마라. 위쪽 30%(y < 405)는 제목 자리, 아래쪽 29%(y > 960)는 본문 글자 자리라서 그려도 잘려 나간다. 중심 피사체는 가로 가운데(x 150~930), 세로 y 440~930 안에 모은다. 위 구도 설명이 다른 위치를 말해도 이 규칙이 우선이다.\n2. 네가 쓰는 것은 완전한 <svg> 문서가 아니라 SVG 요소 조각이다. 허용 요소: <g>, <path>, <circle>, <ellipse>, <rect>, <polygon>, <polyline>, <line>, <defs>, <linearGradient>, <radialGradient>, <stop>. 곡선(C, Q, A 명령)과 겹침으로 형태를 표현해라. 태그는 모두 닫고 속성 값은 큰따옴표로 감싼다.\n3. 허용 속성: id, d, points, x, y, cx, cy, r, rx, ry, width, height, x1, y1, x2, y2, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, opacity, fill-opacity, stroke-opacity, transform(translate·scale·rotate·skewX·skewY·matrix), offset, stop-color, stop-opacity, gradientUnits, fx, fy. 숫자에는 단위를 붙이지 않는다.\n4. 색은 #RRGGBB로만, 이 팔레트만 쓴다: #14213D, #3A6EA5, #F2A65A, #F7F4EE, #E4572E. fill·stroke에는 #RRGGBB, none, 같은 조각 안에 정의한 그라데이션 url(#id)만 쓸 수 있다.\n5. 금지: <text>, <image>, <script>, <foreignObject>, <use>, <style>, 주석, 외부 링크, 이벤트 속성, style 속성. 글자·숫자·기호·로고·사람 얼굴 금지.\n6. 요소는 15~60개. 중심 피사체 하나가 분명하게 보이게 뒤→앞 순서로 쌓는다.\n\n[출력] 설명 없이 JSON 객체 하나만: {\"svg\": \"<g>...</g>\"}\n",
+   "originalSize": [
+    1080,
+    1350
+   ],
+   "normalization": "원본 크기 그대로",
+   "disclosure": "생성 이미지입니다. 실제 사건이나 제품 화면이 아닙니다.",
+   "license": "AI가 만든 그림입니다. 저작권이 없다고 단정하지 않습니다.",
+   "textInImage": "unchecked",
+   "textOverlay": "Pillow로 별도 합성(글자는 그림 파일에 들어 있지 않음)"
+  },
+  {
+   "order": 4,
+   "cardId": "card_4",
+   "file": "cards/card_04.png",
+   "imageTool": "claude-cli SVG + 브라우저",
+   "imageVersion": 1,
+   "imageCreatedAt": "2026-10-23T20:42:54+09:00",
+   "baseImageSha256": "dfb897b00898a7e031eb9905e92f08d2c4e6cef6b8d0b04aaf7811d5fd11bf39",
+   "finalImageSha256": "c597446b7c9585a11a406187a787ad4bad00e243fc7eee6cdb30a7908c7a5957",
+   "attempts": [
+    {
+     "provider": "agy",
+     "outcome": "disabled",
+     "reason": "agy 이미지 생성이 꺼져 있어 시도하지 않았습니다(--no-agy 또는 CARDNEWS_USE_AGY=0으로 끈 설정). 다시 켜려면 run.py --agy(또는 그 설정을 빼고) 서버를 켜세요"
+    },
+    {
+     "provider": "claude-svg",
+     "outcome": "ok"
+    }
+   ],
+   "prompt": "너는 카드뉴스용 설명 일러스트를 SVG로 그리는 디자이너다. 도구 없이 JSON만 만든다.\n\n[그릴 그림]\n- 이미지의 역할: 핵심 변화를 보여 주는 설명 그림\n- 구도와 피사체: 가운데에 떠오르는 해와 그 옆에 알림 종 아이콘이 있는 브리핑 카드 하나를 가로 가운데 배치. 위·아래는 비움. 글자 없음.\n- 그림체(모든 카드 공통): 부드러운 플랫 벡터 일러스트. 둥근 도형과 굵은 윤곽 없는 면 처리, 단순한 아이콘형 사물, 글자·로고 없음\n- 분위기: 차분하고 따뜻하면서 신뢰감 있는 미래형 비서 분위기\n\n[규칙]\n1. 캔버스는 viewBox 0 0 1080 1350이다. 배경은 우리가 그리니 네 조각에 배경을 그리지 마라. 위쪽 30%(y < 405)는 제목 자리, 아래쪽 29%(y > 960)는 본문 글자 자리라서 그려도 잘려 나간다. 중심 피사체는 가로 가운데(x 150~930), 세로 y 440~930 안에 모은다. 위 구도 설명이 다른 위치를 말해도 이 규칙이 우선이다.\n2. 네가 쓰는 것은 완전한 <svg> 문서가 아니라 SVG 요소 조각이다. 허용 요소: <g>, <path>, <circle>, <ellipse>, <rect>, <polygon>, <polyline>, <line>, <defs>, <linearGradient>, <radialGradient>, <stop>. 곡선(C, Q, A 명령)과 겹침으로 형태를 표현해라. 태그는 모두 닫고 속성 값은 큰따옴표로 감싼다.\n3. 허용 속성: id, d, points, x, y, cx, cy, r, rx, ry, width, height, x1, y1, x2, y2, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, opacity, fill-opacity, stroke-opacity, transform(translate·scale·rotate·skewX·skewY·matrix), offset, stop-color, stop-opacity, gradientUnits, fx, fy. 숫자에는 단위를 붙이지 않는다.\n4. 색은 #RRGGBB로만, 이 팔레트만 쓴다: #14213D, #3A6EA5, #F2A65A, #F7F4EE, #E4572E. fill·stroke에는 #RRGGBB, none, 같은 조각 안에 정의한 그라데이션 url(#id)만 쓸 수 있다.\n5. 금지: <text>, <image>, <script>, <foreignObject>, <use>, <style>, 주석, 외부 링크, 이벤트 속성, style 속성. 글자·숫자·기호·로고·사람 얼굴 금지.\n6. 요소는 15~60개. 중심 피사체 하나가 분명하게 보이게 뒤→앞 순서로 쌓는다.\n\n[출력] 설명 없이 JSON 객체 하나만: {\"svg\": \"<g>...</g>\"}\n",
+   "originalSize": [
+    1080,
+    1350
+   ],
+   "normalization": "원본 크기 그대로",
+   "disclosure": "생성 이미지입니다. 실제 사건이나 제품 화면이 아닙니다.",
+   "license": "AI가 만든 그림입니다. 저작권이 없다고 단정하지 않습니다.",
+   "textInImage": "unchecked",
+   "textOverlay": "Pillow로 별도 합성(글자는 그림 파일에 들어 있지 않음)"
+  },
+  {
+   "order": 5,
+   "cardId": "card_5",
+   "file": "cards/card_05.png",
+   "imageTool": "claude-cli SVG + 브라우저",
+   "imageVersion": 1,
+   "imageCreatedAt": "2026-10-23T20:43:19+09:00",
+   "baseImageSha256": "6e38f1e8879d3b788a6fc91ae9fd5d861b81f0a40744b7984459a3b4d35b07bb",
+   "finalImageSha256": "11dde5e4dbda73cfbdf1aa44453d7feccc22a729dbb9a77d79b38ff868f658c1",
+   "attempts": [
+    {
+     "provider": "agy",
+     "outcome": "disabled",
+     "reason": "agy 이미지 생성이 꺼져 있어 시도하지 않았습니다(--no-agy 또는 CARDNEWS_USE_AGY=0으로 끈 설정). 다시 켜려면 run.py --agy(또는 그 설정을 빼고) 서버를 켜세요"
+    },
+    {
+     "provider": "claude-svg",
+     "outcome": "ok"
+    }
+   ],
+   "prompt": "너는 카드뉴스용 설명 일러스트를 SVG로 그리는 디자이너다. 도구 없이 JSON만 만든다.\n\n[그릴 그림]\n- 이미지의 역할: 승인 절차를 보여 주는 개념 그림\n- 구도와 피사체: 가운데에 체크 표시가 있는 확인 버튼과 멈춤 신호가 나란한 방패형 카드 하나를 가로 가운데 배치. 위·아래는 비움. 글자 없음.\n- 그림체(모든 카드 공통): 부드러운 플랫 벡터 일러스트. 둥근 도형과 굵은 윤곽 없는 면 처리, 단순한 아이콘형 사물, 글자·로고 없음\n- 분위기: 차분하고 따뜻하면서 신뢰감 있는 미래형 비서 분위기\n\n[규칙]\n1. 캔버스는 viewBox 0 0 1080 1350이다. 배경은 우리가 그리니 네 조각에 배경을 그리지 마라. 위쪽 30%(y < 405)는 제목 자리, 아래쪽 29%(y > 960)는 본문 글자 자리라서 그려도 잘려 나간다. 중심 피사체는 가로 가운데(x 150~930), 세로 y 440~930 안에 모은다. 위 구도 설명이 다른 위치를 말해도 이 규칙이 우선이다.\n2. 네가 쓰는 것은 완전한 <svg> 문서가 아니라 SVG 요소 조각이다. 허용 요소: <g>, <path>, <circle>, <ellipse>, <rect>, <polygon>, <polyline>, <line>, <defs>, <linearGradient>, <radialGradient>, <stop>. 곡선(C, Q, A 명령)과 겹침으로 형태를 표현해라. 태그는 모두 닫고 속성 값은 큰따옴표로 감싼다.\n3. 허용 속성: id, d, points, x, y, cx, cy, r, rx, ry, width, height, x1, y1, x2, y2, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, opacity, fill-opacity, stroke-opacity, transform(translate·scale·rotate·skewX·skewY·matrix), offset, stop-color, stop-opacity, gradientUnits, fx, fy. 숫자에는 단위를 붙이지 않는다.\n4. 색은 #RRGGBB로만, 이 팔레트만 쓴다: #14213D, #3A6EA5, #F2A65A, #F7F4EE, #E4572E. fill·stroke에는 #RRGGBB, none, 같은 조각 안에 정의한 그라데이션 url(#id)만 쓸 수 있다.\n5. 금지: <text>, <image>, <script>, <foreignObject>, <use>, <style>, 주석, 외부 링크, 이벤트 속성, style 속성. 글자·숫자·기호·로고·사람 얼굴 금지.\n6. 요소는 15~60개. 중심 피사체 하나가 분명하게 보이게 뒤→앞 순서로 쌓는다.\n\n[출력] 설명 없이 JSON 객체 하나만: {\"svg\": \"<g>...</g>\"}\n",
+   "originalSize": [
+    1080,
+    1350
+   ],
+   "normalization": "원본 크기 그대로",
+   "disclosure": "생성 이미지입니다. 실제 사건이나 제품 화면이 아닙니다.",
+   "license": "AI가 만든 그림입니다. 저작권이 없다고 단정하지 않습니다.",
+   "textInImage": "unchecked",
+   "textOverlay": "Pillow로 별도 합성(글자는 그림 파일에 들어 있지 않음)"
+  },
+  {
+   "order": 6,
+   "cardId": "card_6",
+   "file": "cards/card_06.png",
+   "imageTool": "claude-cli SVG + 브라우저",
+   "imageVersion": 1,
+   "imageCreatedAt": "2026-10-23T20:43:46+09:00",
+   "baseImageSha256": "d8ca578de4367f053ab144eb8c04bf6d4528a1189ef969f41f5d1d83ddb0b105",
+   "finalImageSha256": "cc98f2dace53ac9ec6eea77f409e89a3d50c25097c84c4c3356fd32bd14e6e61",
+   "attempts": [
+    {
+     "provider": "agy",
+     "outcome": "disabled",
+     "reason": "agy 이미지 생성이 꺼져 있어 시도하지 않았습니다(--no-agy 또는 CARDNEWS_USE_AGY=0으로 끈 설정). 다시 켜려면 run.py --agy(또는 그 설정을 빼고) 서버를 켜세요"
+    },
+    {
+     "provider": "claude-svg",
+     "outcome": "ok"
+    }
+   ],
+   "prompt": "너는 카드뉴스용 설명 일러스트를 SVG로 그리는 디자이너다. 도구 없이 JSON만 만든다.\n\n[그릴 그림]\n- 이미지의 역할: 한계와 주의를 알리는 경고 그림\n- 구도와 피사체: 가운데에 잠긴 문 앞의 대기 줄 아이콘과 물음표 모양 도형 하나를 가로 가운데 배치. 위·아래는 비움. 글자·숫자 없음.\n- 그림체(모든 카드 공통): 부드러운 플랫 벡터 일러스트. 둥근 도형과 굵은 윤곽 없는 면 처리, 단순한 아이콘형 사물, 글자·로고 없음\n- 분위기: 차분하고 따뜻하면서 신뢰감 있는 미래형 비서 분위기\n\n[규칙]\n1. 캔버스는 viewBox 0 0 1080 1350이다. 배경은 우리가 그리니 네 조각에 배경을 그리지 마라. 위쪽 30%(y < 405)는 제목 자리, 아래쪽 29%(y > 960)는 본문 글자 자리라서 그려도 잘려 나간다. 중심 피사체는 가로 가운데(x 150~930), 세로 y 440~930 안에 모은다. 위 구도 설명이 다른 위치를 말해도 이 규칙이 우선이다.\n2. 네가 쓰는 것은 완전한 <svg> 문서가 아니라 SVG 요소 조각이다. 허용 요소: <g>, <path>, <circle>, <ellipse>, <rect>, <polygon>, <polyline>, <line>, <defs>, <linearGradient>, <radialGradient>, <stop>. 곡선(C, Q, A 명령)과 겹침으로 형태를 표현해라. 태그는 모두 닫고 속성 값은 큰따옴표로 감싼다.\n3. 허용 속성: id, d, points, x, y, cx, cy, r, rx, ry, width, height, x1, y1, x2, y2, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, opacity, fill-opacity, stroke-opacity, transform(translate·scale·rotate·skewX·skewY·matrix), offset, stop-color, stop-opacity, gradientUnits, fx, fy. 숫자에는 단위를 붙이지 않는다.\n4. 색은 #RRGGBB로만, 이 팔레트만 쓴다: #14213D, #3A6EA5, #F2A65A, #F7F4EE, #E4572E. fill·stroke에는 #RRGGBB, none, 같은 조각 안에 정의한 그라데이션 url(#id)만 쓸 수 있다.\n5. 금지: <text>, <image>, <script>, <foreignObject>, <use>, <style>, 주석, 외부 링크, 이벤트 속성, style 속성. 글자·숫자·기호·로고·사람 얼굴 금지.\n6. 요소는 15~60개. 중심 피사체 하나가 분명하게 보이게 뒤→앞 순서로 쌓는다.\n\n[출력] 설명 없이 JSON 객체 하나만: {\"svg\": \"<g>...</g>\"}\n",
+   "originalSize": [
+    1080,
+    1350
+   ],
+   "normalization": "원본 크기 그대로",
+   "disclosure": "생성 이미지입니다. 실제 사건이나 제품 화면이 아닙니다.",
+   "license": "AI가 만든 그림입니다. 저작권이 없다고 단정하지 않습니다.",
+   "textInImage": "unchecked",
+   "textOverlay": "Pillow로 별도 합성(글자는 그림 파일에 들어 있지 않음)"
+  },
+  {
+   "order": 7,
+   "cardId": "card_7",
+   "file": "cards/card_07.png",
+   "imageTool": "claude-cli SVG + 브라우저",
+   "imageVersion": 1,
+   "imageCreatedAt": "2026-10-23T20:44:11+09:00",
+   "baseImageSha256": "6268ce9a9de5e08486274790a6f790f84e7d0401d463223de11db8dc981f196d",
+   "finalImageSha256": "556a0594161d71da309bbfd06ebc12104cd9f5e6fafa5c004767bdd9fb66d484",
+   "attempts": [
+    {
+     "provider": "agy",
+     "outcome": "disabled",
+     "reason": "agy 이미지 생성이 꺼져 있어 시도하지 않았습니다(--no-agy 또는 CARDNEWS_USE_AGY=0으로 끈 설정). 다시 켜려면 run.py --agy(또는 그 설정을 빼고) 서버를 켜세요"
+    },
+    {
+     "provider": "claude-svg",
+     "outcome": "ok"
+    }
+   ],
+   "prompt": "너는 카드뉴스용 설명 일러스트를 SVG로 그리는 디자이너다. 도구 없이 JSON만 만든다.\n\n[그릴 그림]\n- 이미지의 역할: 내용을 정리하고 다음 행동을 안내하는 마무리 그림\n- 구도와 피사체: 가운데에 체크리스트 카드와 돋보기 아이콘 하나를 가로 가운데 배치. 위·아래는 비움. 글자 없음.\n- 그림체(모든 카드 공통): 부드러운 플랫 벡터 일러스트. 둥근 도형과 굵은 윤곽 없는 면 처리, 단순한 아이콘형 사물, 글자·로고 없음\n- 분위기: 차분하고 따뜻하면서 신뢰감 있는 미래형 비서 분위기\n\n[규칙]\n1. 캔버스는 viewBox 0 0 1080 1350이다. 배경은 우리가 그리니 네 조각에 배경을 그리지 마라. 위쪽 30%(y < 405)는 제목 자리, 아래쪽 29%(y > 960)는 본문 글자 자리라서 그려도 잘려 나간다. 중심 피사체는 가로 가운데(x 150~930), 세로 y 440~930 안에 모은다. 위 구도 설명이 다른 위치를 말해도 이 규칙이 우선이다.\n2. 네가 쓰는 것은 완전한 <svg> 문서가 아니라 SVG 요소 조각이다. 허용 요소: <g>, <path>, <circle>, <ellipse>, <rect>, <polygon>, <polyline>, <line>, <defs>, <linearGradient>, <radialGradient>, <stop>. 곡선(C, Q, A 명령)과 겹침으로 형태를 표현해라. 태그는 모두 닫고 속성 값은 큰따옴표로 감싼다.\n3. 허용 속성: id, d, points, x, y, cx, cy, r, rx, ry, width, height, x1, y1, x2, y2, fill, stroke, stroke-width, stroke-linecap, stroke-linejoin, opacity, fill-opacity, stroke-opacity, transform(translate·scale·rotate·skewX·skewY·matrix), offset, stop-color, stop-opacity, gradientUnits, fx, fy. 숫자에는 단위를 붙이지 않는다.\n4. 색은 #RRGGBB로만, 이 팔레트만 쓴다: #14213D, #3A6EA5, #F2A65A, #F7F4EE, #E4572E. fill·stroke에는 #RRGGBB, none, 같은 조각 안에 정의한 그라데이션 url(#id)만 쓸 수 있다.\n5. 금지: <text>, <image>, <script>, <foreignObject>, <use>, <style>, 주석, 외부 링크, 이벤트 속성, style 속성. 글자·숫자·기호·로고·사람 얼굴 금지.\n6. 요소는 15~60개. 중심 피사체 하나가 분명하게 보이게 뒤→앞 순서로 쌓는다.\n\n[출력] 설명 없이 JSON 객체 하나만: {\"svg\": \"<g>...</g>\"}\n",
+   "originalSize": [
+    1080,
+    1350
+   ],
+   "normalization": "원본 크기 그대로",
+   "disclosure": "생성 이미지입니다. 실제 사건이나 제품 화면이 아닙니다.",
+   "license": "AI가 만든 그림입니다. 저작권이 없다고 단정하지 않습니다.",
+   "textInImage": "unchecked",
+   "textOverlay": "Pillow로 별도 합성(글자는 그림 파일에 들어 있지 않음)"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+:root {
+  --bg: #f6f7f9; --card: #fff; --text: #1d2330; --muted: #5d6677; --line: #dfe3ea;
+  --accent: #2456d6; --accent-text: #fff; --warn-bg: #fff4d6; --warn-text: #6b4a00;
+  --err-bg: #fde7e7; --err-text: #8a1c1c; --ok-bg: #e4f5e8; --ok-text: #1d5c2e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171d; --card: #1d222b; --text: #e8ebf1; --muted: #a2abbb; --line: #333a47;
+    --accent: #6c93ff; --accent-text: #0b1020; --warn-bg: #4a3a0a; --warn-text: #ffe6a3;
+    --err-bg: #4a1d1d; --err-text: #ffc9c9; --ok-bg: #1d3d27; --ok-text: #bfeccb;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif; }
+.mock-banner[hidden] { display: none; }
+.mock-banner { background: var(--warn-bg); color: var(--warn-text); padding: 8px 16px; text-align: center; font-size: 14px; position: sticky; top: 0; z-index: 5; }
+.top { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; max-width: 880px; margin: 0 auto; }
+.brand { font-weight: 700; font-size: 18px; color: var(--text); text-decoration: none; }
+.engine-badge, .badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); background: var(--card); white-space: nowrap; }
+.badge.mock { background: var(--warn-bg); color: var(--warn-text); border-color: transparent; }
+.badge.rec { background: var(--ok-bg); color: var(--ok-text); border-color: transparent; }
+main { max-width: 880px; margin: 0 auto; padding: 0 16px 48px; }
+h1 { font-size: 22px; margin: 8px 0 4px; }
+h2 { font-size: 18px; margin: 20px 0 8px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 10px 0; }
+.muted { color: var(--muted); font-size: 14px; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.row.between { justify-content: space-between; }
+label.field { display: block; font-weight: 600; margin: 12px 0 4px; }
+input[type=text], select, textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--text); font: inherit; }
+textarea { min-height: 72px; resize: vertical; }
+button { font: inherit; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; min-height: 44px; }
+button.primary { background: var(--accent); color: var(--accent-text); border-color: transparent; font-weight: 600; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.alert { padding: 10px 14px; border-radius: 8px; margin: 10px 0; }
+.alert.error { background: var(--err-bg); color: var(--err-text); }
+.alert.info { background: var(--warn-bg); color: var(--warn-text); }
+.cand { display: grid; grid-template-columns: 28px 1fr; gap: 10px; }
+.cand.sel { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.cand input[type=checkbox] { width: 20px; height: 20px; margin-top: 4px; }
+.cand h3 { margin: 0 0 4px; font-size: 16px; }
+.meta { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 4px 0; }
+.kv { font-size: 14px; margin: 2px 0; }
+.kv b { color: var(--muted); font-weight: 600; }
+.opt { display: block; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin: 8px 0; cursor: pointer; }
+.opt.sel { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.opt input { margin-right: 8px; }
+.opt small { display: block; color: var(--muted); margin-left: 24px; }
+.progress { display: flex; align-items: center; gap: 10px; }
+.spinner { width: 18px; height: 18px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+ul.plain { margin: 6px 0; padding-left: 20px; }
+a { color: var(--accent); }
+.stickybar { position: sticky; bottom: 0; background: var(--bg); padding: 10px 0; border-top: 1px solid var(--line); margin-top: 12px; }
+@media (max-width: 480px) { .top { padding: 10px 16px; } h1 { font-size: 20px; } }
+.swatch { width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--line); display: inline-block; }
+.keyline { font-weight: 700; font-size: 17px; margin: 6px 0; }
+.sbcard h3, .cardbox h3 { margin: 0 0 4px; }
+.grid { display: grid; gap: 12px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
+.cardimg { display: block; width: 100%; max-width: 420px; height: auto; border-radius: 10px; border: 1px solid var(--line); margin: 8px 0; background: var(--bg); aspect-ratio: 4 / 5; object-fit: cover; }
+.badge { margin: 2px 4px 2px 0; }
+
+body.ts-open { overflow: hidden; }
+.ts-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); overflow: auto; z-index: 50; padding: 16px; }
+.ts-panel { background: var(--bg); color: var(--text); max-width: 1000px; margin: 0 auto; border-radius: 12px; padding: 16px; }
+.ts-cols { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
+.ts-form { flex: 1 1 320px; min-width: 280px; }
+.ts-form textarea { width: 100%; box-sizing: border-box; }
+.ts-phone { flex: 0 0 auto; width: 410px; max-width: 100%; position: sticky; top: 0; }
+.ts-frame { width: 390px; max-width: 100%; border: 8px solid #222; border-radius: 28px; overflow: hidden; background: #ddd; box-sizing: content-box; }
+.ts-img { display: block; width: 100%; height: auto; }
+.ts-checks { list-style: none; padding: 0; margin: 0 0 8px; }
+.ts-checks li { margin: 4px 0; font-size: 14px; }
+label.inline { margin-left: 8px; font-weight: normal; }
+
+.revbox { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--line); }
+.revbox textarea { width: 100%; box-sizing: border-box; margin: 6px 0; }
+a.btn { display: inline-block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; color: var(--text); background: var(--card); }
+
+.verbox { width: 110px; font-size: 12px; }
+.verimg { width: 110px; height: auto; border-radius: 6px; display: block; }
